@@ -7,8 +7,8 @@ public class Player : MonoBehaviour
     public Transform leftController;
     public Transform rightController;
 
-    public LineRenderer lLine;
-    public LineRenderer rLine;
+    public VRTeleporter leftTeleporter;
+    public VRTeleporter rightTeleporter;
 
     public GameObject indicator;
 
@@ -25,15 +25,13 @@ public class Player : MonoBehaviour
         if (left != 0)
         {
             leftCast = true;
-            lLine.enabled = true;
-            Cast(leftController, lLine);
+            leftTeleporter.ToggleDisplay(true);
         }
         else if(leftCast)
         {
             leftCast = false;
-            lLine.enabled = false;
-            if (targetPosition != null)
-                transform.position = (Vector3)targetPosition;
+            leftTeleporter.Teleport();
+            leftTeleporter.ToggleDisplay(false);
 
             indicator.SetActive(false);
         }
@@ -41,15 +39,13 @@ public class Player : MonoBehaviour
         if (right != 0)
         {
             rightCast = true;
-            rLine.enabled = true;
-            Cast(rightController, rLine);
+            rightTeleporter.ToggleDisplay(true);
         }
         else if(rightCast)
         {
             rightCast = false;
-            rLine.enabled = false;
-            if (targetPosition != null)
-                transform.position = (Vector3)targetPosition;
+            rightTeleporter.Teleport();
+            rightTeleporter.ToggleDisplay(false);
 
             indicator.SetActive(false);
         }
