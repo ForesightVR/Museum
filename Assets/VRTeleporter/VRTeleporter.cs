@@ -16,7 +16,7 @@ public class VRTeleporter : MonoBehaviour
     public float strength = 10f; // Increasing this value will increase overall arc length
 
 
-    int maxVertexcount = 100; // limitation of vertices for performance. 
+    int maxVertexcount = 200; // limitation of vertices for performance. 
 
     private float vertexDelta = 0.08f; // Delta between each Vertex on arc. Decresing this value may cause performance problem.
 
@@ -33,6 +33,7 @@ public class VRTeleporter : MonoBehaviour
     private List<Vector3> vertexList = new List<Vector3>(); // vertex on arc
 
     private bool displayActive = false; // don't update path when it's false.
+    public float height;
 
 
     // Teleport target transform to ground position
@@ -40,7 +41,7 @@ public class VRTeleporter : MonoBehaviour
     {
         if (groundDetected)
         {
-            bodyTransforn.position = groundPos + lastNormal * 0.1f;
+            bodyTransforn.position = (groundPos + lastNormal * 0.1f) + Vector3.up * height;
         }
         else
         {
@@ -116,7 +117,7 @@ public class VRTeleporter : MonoBehaviour
 
         if (groundDetected)
         {
-            positionMarker.transform.position = groundPos + lastNormal * 0.1f;
+            positionMarker.transform.position = groundPos + lastNormal * 0.05f;
             positionMarker.transform.LookAt(groundPos);
         }
 

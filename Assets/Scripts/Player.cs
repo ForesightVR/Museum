@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class Player : MonoBehaviour
 {
@@ -10,17 +11,15 @@ public class Player : MonoBehaviour
     public VRTeleporter leftTeleporter;
     public VRTeleporter rightTeleporter;
 
-    public GameObject indicator;
-
     bool leftCast;
     bool rightCast;
 
     Vector3? targetPosition;
-
     private void Update()
     {
-        float left = OVRInput.Get(OVRInput.RawAxis2D.LThumbstick).magnitude;
-        float right = OVRInput.Get(OVRInput.RawAxis2D.RThumbstick).magnitude;
+
+        float left = OVRInput.Get(OVRInput.Axis2D.PrimaryThumbstick).magnitude;
+        float right = OVRInput.Get(OVRInput.Axis2D.SecondaryThumbstick).magnitude;
 
         if (left != 0)
         {
@@ -32,8 +31,6 @@ public class Player : MonoBehaviour
             leftCast = false;
             leftTeleporter.Teleport();
             leftTeleporter.ToggleDisplay(false);
-
-            indicator.SetActive(false);
         }
 
         if (right != 0)
@@ -41,13 +38,11 @@ public class Player : MonoBehaviour
             rightCast = true;
             rightTeleporter.ToggleDisplay(true);
         }
-        else if(rightCast)
+        else if (rightCast)
         {
             rightCast = false;
             rightTeleporter.Teleport();
             rightTeleporter.ToggleDisplay(false);
-
-            indicator.SetActive(false);
         }
     }
 
@@ -56,7 +51,6 @@ public class Player : MonoBehaviour
         RaycastHit hit;
         if (Physics.Raycast(controller.position, controller.forward, out hit, Mathf.Infinity))
         {
-            indicator.SetActive(true);
             line.SetPosition(0, controller.position);
             line.SetPosition(1, hit.point);
 
@@ -66,9 +60,6 @@ public class Player : MonoBehaviour
                 line.endColor = Color.green;
 
                 targetPosition = hit.point;
-
-                indicator.transform.position = hit.point + (Vector3.up * .05f);
-                indicator.transform.rotation = Quaternion.FromToRotation(Vector3.up, hit.normal);
             }
             else
             {
