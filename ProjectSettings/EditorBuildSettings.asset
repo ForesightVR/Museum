@@ -6,6 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/True Skool.unity
-    guid: 9fc0d4010bbf28b4594072e72b8655ab
+    path: Assets/Scenes/Island of Brilliance.unity
+    guid: 309a83aa25c4cde4495c6df08575d052
   m_configObjects: {}
