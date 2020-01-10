@@ -1,8 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.InputSystem;
-
+using UnityEngine.XR;
 public class Player : MonoBehaviour
 {
     public Transform leftController;
@@ -15,13 +14,32 @@ public class Player : MonoBehaviour
     bool rightCast;
 
     Vector3? targetPosition;
-    private void Update()
+
+    InputDevice leftHandDevice;
+    InputDevice rightHandDevice;
+
+    private void Start()
     {
 
-        float left = OVRInput.Get(OVRInput.Axis2D.PrimaryThumbstick).magnitude;
-        float right = OVRInput.Get(OVRInput.Axis2D.SecondaryThumbstick).magnitude;
 
-        if (left != 0)
+
+        //var leftHandDevices = new List<InputDevice>();
+        //InputDevices.GetDevicesAtXRNode(XRNode.LeftHand, leftHandDevices);
+        //leftHandDevice = leftHandDevices[0];
+
+        //var rightHandDevices = new List<InputDevice>();
+        //InputDevices.GetDevicesAtXRNode(XRNode.RightHand, rightHandDevices);
+        //rightHandDevice = rightHandDevices[0];
+    }
+    private void Update()
+    {
+        leftHandDevice = InputDevices.GetDeviceAtXRNode(XRNode.LeftHand);
+        rightHandDevice = InputDevices.GetDeviceAtXRNode(XRNode.RightHand);
+
+        leftHandDevice.TryGetFeatureValue(CommonUsages.primary2DAxis, out Vector2 left); 
+        rightHandDevice.TryGetFeatureValue(CommonUsages.primary2DAxis, out Vector2 right);
+
+        if (left.magnitude != 0)
         {
             leftCast = true;
             leftTeleporter.ToggleDisplay(true);
@@ -33,7 +51,7 @@ public class Player : MonoBehaviour
             leftTeleporter.ToggleDisplay(false);
         }
 
-        if (right != 0)
+        if (right.magnitude != 0)
         {
             rightCast = true;
             rightTeleporter.ToggleDisplay(true);
