@@ -9,7 +9,7 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: Light Metal
   m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: _EMISSION _METALLICGLOSSMAP
+  m_ShaderKeywords: _EMISSION _GLOSSYREFLECTIONS_OFF
   m_LightmapFlags: 1
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -44,7 +44,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
-        m_Texture: {fileID: 2800000, guid: 55bd0767e5c79dd4386b068694e6f122, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _OcclusionMap:
@@ -60,10 +60,10 @@ Material:
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
-    - _GlossMapScale: 0.67
-    - _Glossiness: 0.5
-    - _GlossyReflections: 1
-    - _Metallic: 0
+    - _GlossMapScale: 0.457
+    - _Glossiness: 0.637
+    - _GlossyReflections: 0
+    - _Metallic: 1
     - _Mode: 0
     - _OcclusionStrength: 1
     - _Parallax: 0.02
@@ -73,5 +73,5 @@ Material:
     - _UVSec: 0
     - _ZWrite: 1
     m_Colors:
-    - _Color: {r: 0.7264151, g: 0.5452775, b: 0.37348703, a: 1}
-    - _EmissionColor: {r: 2.9960785, g: 2.9960785, b: 2.9960785, a: 1}
+    - _Color: {r: 0.5660378, g: 0.3790792, b: 0.20024922, a: 1}
+    - _EmissionColor: {r: 2.9960785, g: 2.4313726, b: 1.3176471, a: 1}

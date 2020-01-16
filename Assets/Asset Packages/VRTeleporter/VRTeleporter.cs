@@ -8,6 +8,7 @@ public class VRTeleporter : MonoBehaviour
     public GameObject positionMarker; // marker for display ground position
 
     public Transform bodyTransforn; // target transferred by teleport
+    public Transform centerEyeCamera;
 
     public LayerMask excludeLayers; // excluding for performance
 
@@ -41,7 +42,8 @@ public class VRTeleporter : MonoBehaviour
     {
         if (groundDetected)
         {
-            bodyTransforn.position = (groundPos + lastNormal * 0.1f) + Vector3.up * height;
+            Vector3 cameraPos = new Vector3(centerEyeCamera.transform.localPosition.x, 0, centerEyeCamera.transform.localPosition.z);
+            bodyTransforn.position = ((groundPos + lastNormal * 0.1f) + Vector3.up * height) - cameraPos;
         }
         else
         {
@@ -56,10 +58,6 @@ public class VRTeleporter : MonoBehaviour
         positionMarker.SetActive(active);
         displayActive = active;
     }
-
-
-
-
 
     private void Awake()
     {
@@ -126,6 +124,4 @@ public class VRTeleporter : MonoBehaviour
         arcRenderer.positionCount = vertexList.Count;
         arcRenderer.SetPositions(vertexList.ToArray());
     }
-
-
 }
