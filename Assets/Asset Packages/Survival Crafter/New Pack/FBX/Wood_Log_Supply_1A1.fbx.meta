@@ -1,0 +1,197 @@
+fileFormatVersion: 2
+guid: a41a9254583d33d4aaa85b6a55df056b
+timeCreated: 1499027292
+licenseType: Store
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Advanced_Wood_Wall_1A1
+    100002: Advanced_Wood_Wall_Door_1A1
+    100004: Advanced_Wood_Wall_Window_1A1.001
+    100006: Advanced_Wood_Wall_Window_1A2
+    100008: Log_1A1
+    100010: Log_1A1_Standing
+    100012: Log_1A2
+    100014: Log_1A2_Standing
+    100016: Log_Floor_1A1
+    100018: Log_Floor_1A2
+    100020: Log_Floor_1A3
+    100022: Log_Pillar_1A1
+    100024: Log_Pillar_1A2
+    100026: Log_Roof_1A1
+    100028: Log_Wall_1A1
+    100030: Log_Wall_1A2
+    100032: Log_Wall_1A2_Medium
+    100034: Log_Wall_1A2_Medium_2
+    100036: Log_Wall_1A3
+    100038: Log_Wall_Entrance_1A1
+    100040: //RootNode
+    400000: Advanced_Wood_Wall_1A1
+    400002: Advanced_Wood_Wall_Door_1A1
+    400004: Advanced_Wood_Wall_Window_1A1.001
+    400006: Advanced_Wood_Wall_Window_1A2
+    400008: Log_1A1
+    400010: Log_1A1_Standing
+    400012: Log_1A2
+    400014: Log_1A2_Standing
+    400016: Log_Floor_1A1
+    400018: Log_Floor_1A2
+    400020: Log_Floor_1A3
+    400022: Log_Pillar_1A1
+    400024: Log_Pillar_1A2
+    400026: Log_Roof_1A1
+    400028: Log_Wall_1A1
+    400030: Log_Wall_1A2
+    400032: Log_Wall_1A2_Medium
+    400034: Log_Wall_1A2_Medium_2
+    400036: Log_Wall_1A3
+    400038: Log_Wall_Entrance_1A1
+    400040: //RootNode
+    2300000: Advanced_Wood_Wall_1A1
+    2300002: Advanced_Wood_Wall_Door_1A1
+    2300004: Advanced_Wood_Wall_Window_1A1.001
+    2300006: Advanced_Wood_Wall_Window_1A2
+    2300008: Log_1A1
+    2300010: Log_1A1_Standing
+    2300012: Log_1A2
+    2300014: Log_1A2_Standing
+    2300016: Log_Floor_1A1
+    2300018: Log_Floor_1A2
+    2300020: Log_Floor_1A3
+    2300022: Log_Pillar_1A1
+    2300024: Log_Pillar_1A2
+    2300026: Log_Roof_1A1
+    2300028: Log_Wall_1A1
+    2300030: Log_Wall_1A2
+    2300032: Log_Wall_1A2_Medium
+    2300034: Log_Wall_1A2_Medium_2
+    2300036: Log_Wall_1A3
+    2300038: Log_Wall_Entrance_1A1
+    3300000: Advanced_Wood_Wall_1A1
+    3300002: Advanced_Wood_Wall_Door_1A1
+    3300004: Advanced_Wood_Wall_Window_1A1.001
+    3300006: Advanced_Wood_Wall_Window_1A2
+    3300008: Log_1A1
+    3300010: Log_1A1_Standing
+    3300012: Log_1A2
+    3300014: Log_1A2_Standing
+    3300016: Log_Floor_1A1
+    3300018: Log_Floor_1A2
+    3300020: Log_Floor_1A3
+    3300022: Log_Pillar_1A1
+    3300024: Log_Pillar_1A2
+    3300026: Log_Roof_1A1
+    3300028: Log_Wall_1A1
+    3300030: Log_Wall_1A2
+    3300032: Log_Wall_1A2_Medium
+    3300034: Log_Wall_1A2_Medium_2
+    3300036: Log_Wall_1A3
+    3300038: Log_Wall_Entrance_1A1
+    4300000: Log_Floor_1A3
+    4300002: Log_Pillar_1A2
+    4300004: Log_Wall_1A3
+    4300006: Log_Roof_1A1
+    4300008: Advanced_Wood_Wall_Window_1A1.001
+    4300010: Advanced_Wood_Wall_Door_1A1
+    4300012: Advanced_Wood_Wall_Window_1A2
+    4300014: Advanced_Wood_Wall_1A1
+    4300016: Log_Wall_1A2_Medium_2
+    4300018: Log_Wall_1A2_Medium
+    4300020: Log_1A1_Standing
+    4300022: Log_1A2_Standing
+    4300024: Log_Wall_Entrance_1A1
+    4300026: Log_Pillar_1A1
+    4300028: Log_Wall_1A2
+    4300030: Log_Wall_1A1
+    4300032: Log_Floor_1A1
+    4300034: Log_Floor_1A2
+    4300036: Log_1A2
+    4300038: Log_1A1
+    6400000: Advanced_Wood_Wall_1A1
+    6400002: Advanced_Wood_Wall_Door_1A1
+    6400004: Advanced_Wood_Wall_Window_1A1.001
+    6400006: Advanced_Wood_Wall_Window_1A2
+    6400008: Log_1A1
+    6400010: Log_1A1_Standing
+    6400012: Log_1A2
+    6400014: Log_1A2_Standing
+    6400016: Log_Floor_1A1
+    6400018: Log_Floor_1A2
+    6400020: Log_Floor_1A3
+    6400022: Log_Pillar_1A1
+    6400024: Log_Pillar_1A2
+    6400026: Log_Roof_1A1
+    6400028: Log_Wall_1A1
+    6400030: Log_Wall_1A2
+    6400032: Log_Wall_1A2_Medium
+    6400034: Log_Wall_1A2_Medium_2
+    6400036: Log_Wall_1A3
+    6400038: Log_Wall_Entrance_1A1
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 1
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,247 @@
+fileFormatVersion: 2
+guid: 17654dab22c121043a5502b8ec8bb2f5
+timeCreated: 1520350413
+licenseType: Store
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Door_1A1
+    100002: Door_1A2
+    100004: Floor_A
+    100006: Floor_Angled_A
+    100008: Floor_B
+    100010: //RootNode
+    100012: Roof_Piece_A
+    100014: Roof_Piece_Angled_A
+    100016: Roof_Piece_Angled_B
+    100018: Roof_Piece_B
+    100020: Roof_Piece_Half_A
+    100022: Wall_A
+    100024: Wall_Angled_A
+    100026: Wall_B
+    100028: Wall_Door_A
+    100030: Wall_Door_B
+    100032: Wall_Half_A
+    100034: Wall_Half_B
+    100036: Wall_Pillar_A
+    100038: Wall_Pillar_Angled_A
+    100040: Wall_Roof_Angled_A
+    100042: Wall_Roof_Angled_B
+    100044: Wall_Roof_Small_A
+    100046: Wall_Roof_Small_Half_A
+    100048: Wall_Small_Half_A
+    100050: Wall_Window_A
+    100052: Wall_Window_B
+    100054: Window_Shutter_1A1
+    100056: Window_Shutter_1A2
+    400000: Door_1A1
+    400002: Door_1A2
+    400004: Floor_A
+    400006: Floor_Angled_A
+    400008: Floor_B
+    400010: //RootNode
+    400012: Roof_Piece_A
+    400014: Roof_Piece_Angled_A
+    400016: Roof_Piece_Angled_B
+    400018: Roof_Piece_B
+    400020: Roof_Piece_Half_A
+    400022: Wall_A
+    400024: Wall_Angled_A
+    400026: Wall_B
+    400028: Wall_Door_A
+    400030: Wall_Door_B
+    400032: Wall_Half_A
+    400034: Wall_Half_B
+    400036: Wall_Pillar_A
+    400038: Wall_Pillar_Angled_A
+    400040: Wall_Roof_Angled_A
+    400042: Wall_Roof_Angled_B
+    400044: Wall_Roof_Small_A
+    400046: Wall_Roof_Small_Half_A
+    400048: Wall_Small_Half_A
+    400050: Wall_Window_A
+    400052: Wall_Window_B
+    400054: Window_Shutter_1A1
+    400056: Window_Shutter_1A2
+    2300000: Door_1A1
+    2300002: Door_1A2
+    2300004: Floor_A
+    2300006: Floor_Angled_A
+    2300008: Floor_B
+    2300010: Roof_Piece_A
+    2300012: Roof_Piece_Angled_A
+    2300014: Roof_Piece_Angled_B
+    2300016: Roof_Piece_B
+    2300018: Roof_Piece_Half_A
+    2300020: Wall_A
+    2300022: Wall_Angled_A
+    2300024: Wall_B
+    2300026: Wall_Door_A
+    2300028: Wall_Door_B
+    2300030: Wall_Half_A
+    2300032: Wall_Half_B
+    2300034: Wall_Pillar_A
+    2300036: Wall_Pillar_Angled_A
+    2300038: Wall_Roof_Angled_A
+    2300040: Wall_Roof_Angled_B
+    2300042: Wall_Roof_Small_A
+    2300044: Wall_Roof_Small_Half_A
+    2300046: Wall_Small_Half_A
+    2300048: Wall_Window_A
+    2300050: Wall_Window_B
+    2300052: Window_Shutter_1A1
+    2300054: Window_Shutter_1A2
+    3300000: Door_1A1
+    3300002: Door_1A2
+    3300004: Floor_A
+    3300006: Floor_Angled_A
+    3300008: Floor_B
+    3300010: Roof_Piece_A
+    3300012: Roof_Piece_Angled_A
+    3300014: Roof_Piece_Angled_B
+    3300016: Roof_Piece_B
+    3300018: Roof_Piece_Half_A
+    3300020: Wall_A
+    3300022: Wall_Angled_A
+    3300024: Wall_B
+    3300026: Wall_Door_A
+    3300028: Wall_Door_B
+    3300030: Wall_Half_A
+    3300032: Wall_Half_B
+    3300034: Wall_Pillar_A
+    3300036: Wall_Pillar_Angled_A
+    3300038: Wall_Roof_Angled_A
+    3300040: Wall_Roof_Angled_B
+    3300042: Wall_Roof_Small_A
+    3300044: Wall_Roof_Small_Half_A
+    3300046: Wall_Small_Half_A
+    3300048: Wall_Window_A
+    3300050: Wall_Window_B
+    3300052: Window_Shutter_1A1
+    3300054: Window_Shutter_1A2
+    4300000: Wall_Pillar_Angled_A
+    4300002: Window_Shutter_1A2
+    4300004: Window_Shutter_1A1
+    4300006: Roof_Piece_Angled_B
+    4300008: Wall_Pillar_A
+    4300010: Roof_Piece_Angled_A
+    4300012: Wall_Angled_A
+    4300014: Floor_B
+    4300016: Floor_A
+    4300018: Floor_Angled_A
+    4300020: Roof_Piece_Half_A
+    4300022: Wall_Roof_Small_Half_A
+    4300024: Roof_Piece_B
+    4300026: Roof_Piece_A
+    4300028: Wall_Roof_Angled_B
+    4300030: Wall_Roof_Angled_A
+    4300032: Wall_Roof_Small_A
+    4300034: Wall_Small_Half_A
+    4300036: Door_1A2
+    4300038: Wall_Half_B
+    4300040: Wall_Half_A
+    4300042: Wall_B
+    4300044: Wall_Door_B
+    4300046: Wall_Window_B
+    4300048: Door_1A1
+    4300050: Wall_Window_A
+    4300052: Wall_Door_A
+    4300054: Wall_A
+    6400000: Door_1A1
+    6400002: Door_1A2
+    6400004: Floor_A
+    6400006: Floor_Angled_A
+    6400008: Floor_B
+    6400010: Roof_Piece_A
+    6400012: Roof_Piece_Angled_A
+    6400014: Roof_Piece_Angled_B
+    6400016: Roof_Piece_B
+    6400018: Roof_Piece_Half_A
+    6400020: Wall_A
+    6400022: Wall_Angled_A
+    6400024: Wall_B
+    6400026: Wall_Door_A
+    6400028: Wall_Door_B
+    6400030: Wall_Half_A
+    6400032: Wall_Half_B
+    6400034: Wall_Pillar_A
+    6400036: Wall_Pillar_Angled_A
+    6400038: Wall_Roof_Angled_A
+    6400040: Wall_Roof_Angled_B
+    6400042: Wall_Roof_Small_A
+    6400044: Wall_Roof_Small_Half_A
+    6400046: Wall_Small_Half_A
+    6400048: Wall_Window_A
+    6400050: Wall_Window_B
+    6400052: Window_Shutter_1A1
+    6400054: Window_Shutter_1A2
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 1
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
