@@ -1,0 +1,235 @@
+fileFormatVersion: 2
+guid: 1f6bbad8b753d9b4889b48fd2beaaf39
+timeCreated: 1510076504
+licenseType: Store
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Cliff_Rock_1A1
+    100002: Cliff_Rock_1A1_Flat
+    100004: Cliff_Rock_1A1_Flat_Large
+    100006: Cliff_Rock_1A1_Flat_Small
+    100008: Cliff_Rock_1A1_Large
+    100010: Cliff_Rock_1A1_Small
+    100012: Cliff_Rock_1A1_Small_2
+    100014: Cliff_Rock_1A2
+    100016: Cliff_Rock_1A2_Flat
+    100018: Cliff_Rock_1A2_Flat_Large
+    100020: Cliff_Rock_1A2_Flat_Small
+    100022: Cliff_Rock_1A2_Large
+    100024: Cliff_Rock_1A2_Small
+    100026: Cliff_Rock_1A2_Small_2
+    100028: Cliff_Rock_1B1
+    100030: Cliff_Rock_1B1_Large
+    100032: Cliff_Rock_1B2
+    100034: Cliff_Rock_1B2_Large
+    100036: //RootNode
+    100038: Ground_Rock_1A1
+    100040: Ground_Rock_1A1_Flat
+    100042: Ground_Rock_1A1_Flat_Large
+    100044: Ground_Rock_1A1_Large
+    100046: Ground_Rock_1A2
+    100048: Ground_Rock_1A2_Flat
+    100050: Ground_Rock_1A2_Flat_Large
+    100052: Ground_Rock_1A2_Large
+    400000: Cliff_Rock_1A1
+    400002: Cliff_Rock_1A1_Flat
+    400004: Cliff_Rock_1A1_Flat_Large
+    400006: Cliff_Rock_1A1_Flat_Small
+    400008: Cliff_Rock_1A1_Large
+    400010: Cliff_Rock_1A1_Small
+    400012: Cliff_Rock_1A1_Small_2
+    400014: Cliff_Rock_1A2
+    400016: Cliff_Rock_1A2_Flat
+    400018: Cliff_Rock_1A2_Flat_Large
+    400020: Cliff_Rock_1A2_Flat_Small
+    400022: Cliff_Rock_1A2_Large
+    400024: Cliff_Rock_1A2_Small
+    400026: Cliff_Rock_1A2_Small_2
+    400028: Cliff_Rock_1B1
+    400030: Cliff_Rock_1B1_Large
+    400032: Cliff_Rock_1B2
+    400034: Cliff_Rock_1B2_Large
+    400036: //RootNode
+    400038: Ground_Rock_1A1
+    400040: Ground_Rock_1A1_Flat
+    400042: Ground_Rock_1A1_Flat_Large
+    400044: Ground_Rock_1A1_Large
+    400046: Ground_Rock_1A2
+    400048: Ground_Rock_1A2_Flat
+    400050: Ground_Rock_1A2_Flat_Large
+    400052: Ground_Rock_1A2_Large
+    2300000: Cliff_Rock_1A1
+    2300002: Cliff_Rock_1A1_Flat
+    2300004: Cliff_Rock_1A1_Flat_Large
+    2300006: Cliff_Rock_1A1_Flat_Small
+    2300008: Cliff_Rock_1A1_Large
+    2300010: Cliff_Rock_1A1_Small
+    2300012: Cliff_Rock_1A1_Small_2
+    2300014: Cliff_Rock_1A2
+    2300016: Cliff_Rock_1A2_Flat
+    2300018: Cliff_Rock_1A2_Flat_Large
+    2300020: Cliff_Rock_1A2_Flat_Small
+    2300022: Cliff_Rock_1A2_Large
+    2300024: Cliff_Rock_1A2_Small
+    2300026: Cliff_Rock_1A2_Small_2
+    2300028: Cliff_Rock_1B1
+    2300030: Cliff_Rock_1B1_Large
+    2300032: Cliff_Rock_1B2
+    2300034: Cliff_Rock_1B2_Large
+    2300036: Ground_Rock_1A1
+    2300038: Ground_Rock_1A1_Flat
+    2300040: Ground_Rock_1A1_Flat_Large
+    2300042: Ground_Rock_1A1_Large
+    2300044: Ground_Rock_1A2
+    2300046: Ground_Rock_1A2_Flat
+    2300048: Ground_Rock_1A2_Flat_Large
+    2300050: Ground_Rock_1A2_Large
+    3300000: Cliff_Rock_1A1
+    3300002: Cliff_Rock_1A1_Flat
+    3300004: Cliff_Rock_1A1_Flat_Large
+    3300006: Cliff_Rock_1A1_Flat_Small
+    3300008: Cliff_Rock_1A1_Large
+    3300010: Cliff_Rock_1A1_Small
+    3300012: Cliff_Rock_1A1_Small_2
+    3300014: Cliff_Rock_1A2
+    3300016: Cliff_Rock_1A2_Flat
+    3300018: Cliff_Rock_1A2_Flat_Large
+    3300020: Cliff_Rock_1A2_Flat_Small
+    3300022: Cliff_Rock_1A2_Large
+    3300024: Cliff_Rock_1A2_Small
+    3300026: Cliff_Rock_1A2_Small_2
+    3300028: Cliff_Rock_1B1
+    3300030: Cliff_Rock_1B1_Large
+    3300032: Cliff_Rock_1B2
+    3300034: Cliff_Rock_1B2_Large
+    3300036: Ground_Rock_1A1
+    3300038: Ground_Rock_1A1_Flat
+    3300040: Ground_Rock_1A1_Flat_Large
+    3300042: Ground_Rock_1A1_Large
+    3300044: Ground_Rock_1A2
+    3300046: Ground_Rock_1A2_Flat
+    3300048: Ground_Rock_1A2_Flat_Large
+    3300050: Ground_Rock_1A2_Large
+    4300000: Ground_Rock_1A1_Flat_Large
+    4300002: Ground_Rock_1A2_Flat_Large
+    4300004: Ground_Rock_1A2_Flat
+    4300006: Ground_Rock_1A1_Flat
+    4300008: Cliff_Rock_1A1_Flat_Large
+    4300010: Cliff_Rock_1A2_Flat_Large
+    4300012: Cliff_Rock_1A1_Flat_Small
+    4300014: Cliff_Rock_1A2_Flat_Small
+    4300016: Cliff_Rock_1A2_Flat
+    4300018: Cliff_Rock_1A1_Flat
+    4300020: Cliff_Rock_1B1_Large
+    4300022: Cliff_Rock_1B2_Large
+    4300024: Cliff_Rock_1A1_Small_2
+    4300026: Cliff_Rock_1A2_Small_2
+    4300028: Cliff_Rock_1A2_Small
+    4300030: Cliff_Rock_1A2_Large
+    4300032: Cliff_Rock_1A1_Small
+    4300034: Cliff_Rock_1A2
+    4300036: Cliff_Rock_1B2
+    4300038: Cliff_Rock_1B1
+    4300040: Ground_Rock_1A1_Large
+    4300042: Ground_Rock_1A2_Large
+    4300044: Ground_Rock_1A2
+    4300046: Cliff_Rock_1A1_Large
+    4300048: Ground_Rock_1A1
+    4300050: Cliff_Rock_1A1
+    6400000: Cliff_Rock_1A1
+    6400002: Cliff_Rock_1A1_Flat
+    6400004: Cliff_Rock_1A1_Flat_Large
+    6400006: Cliff_Rock_1A1_Flat_Small
+    6400008: Cliff_Rock_1A1_Large
+    6400010: Cliff_Rock_1A1_Small
+    6400012: Cliff_Rock_1A1_Small_2
+    6400014: Cliff_Rock_1A2
+    6400016: Cliff_Rock_1A2_Flat
+    6400018: Cliff_Rock_1A2_Flat_Large
+    6400020: Cliff_Rock_1A2_Flat_Small
+    6400022: Cliff_Rock_1A2_Large
+    6400024: Cliff_Rock_1A2_Small
+    6400026: Cliff_Rock_1A2_Small_2
+    6400028: Cliff_Rock_1B1
+    6400030: Cliff_Rock_1B1_Large
+    6400032: Cliff_Rock_1B2
+    6400034: Cliff_Rock_1B2_Large
+    6400036: Ground_Rock_1A1
+    6400038: Ground_Rock_1A1_Flat
+    6400040: Ground_Rock_1A1_Flat_Large
+    6400042: Ground_Rock_1A1_Large
+    6400044: Ground_Rock_1A2
+    6400046: Ground_Rock_1A2_Flat
+    6400048: Ground_Rock_1A2_Flat_Large
+    6400050: Ground_Rock_1A2_Large
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 1
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

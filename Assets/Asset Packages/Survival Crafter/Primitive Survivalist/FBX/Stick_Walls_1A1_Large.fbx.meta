@@ -1,0 +1,223 @@
+fileFormatVersion: 2
+guid: fd6c94057c0f5f54697c4c9ff75db73e
+timeCreated: 1520954583
+licenseType: Store
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Branch_1A1_A
+    100002: Branch_1A1_A_LOD_1
+    100004: Branch_1A1_B
+    100006: Branch_1A1_B_LOD_1
+    100008: Branch_1A1_C
+    100010: Branch_1A1_C_LOD_1
+    100012: Branch_1A2_A
+    100014: Branch_1A2_A_LOD_1
+    100016: Branch_1A2_B
+    100018: Branch_1A2_B_LOD_1
+    100020: Branch_1A2_C
+    100022: Branch_1A2_C_LOD_1
+    100024: Stick_Wall_1A1_A
+    100026: Stick_Wall_1A1_A_2
+    100028: Stick_Wall_1A1_A_2_LOD_1
+    100030: Stick_Wall_1A1_A_2_LOD_2
+    100032: Stick_Wall_1A1_A_LOD_1
+    100034: Stick_Wall_1A1_A_LOD_2
+    100036: Stick_Wall_1A1_B
+    100038: Stick_Wall_1A1_B_LOD_1
+    100040: Stick_Wall_1A1_B_LOD_2
+    100042: Stick_Wall_1A1_C
+    100044: Stick_Wall_1A1_C_LOD_1
+    100046: Stick_Wall_1A1_C_LOD_2
+    100048: //RootNode
+    400000: Branch_1A1_A
+    400002: Branch_1A1_A_LOD_1
+    400004: Branch_1A1_B
+    400006: Branch_1A1_B_LOD_1
+    400008: Branch_1A1_C
+    400010: Branch_1A1_C_LOD_1
+    400012: Branch_1A2_A
+    400014: Branch_1A2_A_LOD_1
+    400016: Branch_1A2_B
+    400018: Branch_1A2_B_LOD_1
+    400020: Branch_1A2_C
+    400022: Branch_1A2_C_LOD_1
+    400024: Stick_Wall_1A1_A
+    400026: Stick_Wall_1A1_A_2
+    400028: Stick_Wall_1A1_A_2_LOD_1
+    400030: Stick_Wall_1A1_A_2_LOD_2
+    400032: Stick_Wall_1A1_A_LOD_1
+    400034: Stick_Wall_1A1_A_LOD_2
+    400036: Stick_Wall_1A1_B
+    400038: Stick_Wall_1A1_B_LOD_1
+    400040: Stick_Wall_1A1_B_LOD_2
+    400042: Stick_Wall_1A1_C
+    400044: Stick_Wall_1A1_C_LOD_1
+    400046: Stick_Wall_1A1_C_LOD_2
+    400048: //RootNode
+    2300000: Branch_1A1_A
+    2300002: Branch_1A1_A_LOD_1
+    2300004: Branch_1A1_B
+    2300006: Branch_1A1_B_LOD_1
+    2300008: Branch_1A1_C
+    2300010: Branch_1A1_C_LOD_1
+    2300012: Branch_1A2_A
+    2300014: Branch_1A2_A_LOD_1
+    2300016: Branch_1A2_B
+    2300018: Branch_1A2_B_LOD_1
+    2300020: Branch_1A2_C
+    2300022: Branch_1A2_C_LOD_1
+    2300024: Stick_Wall_1A1_A
+    2300026: Stick_Wall_1A1_A_2
+    2300028: Stick_Wall_1A1_A_2_LOD_1
+    2300030: Stick_Wall_1A1_A_2_LOD_2
+    2300032: Stick_Wall_1A1_A_LOD_1
+    2300034: Stick_Wall_1A1_A_LOD_2
+    2300036: Stick_Wall_1A1_B
+    2300038: Stick_Wall_1A1_B_LOD_1
+    2300040: Stick_Wall_1A1_B_LOD_2
+    2300042: Stick_Wall_1A1_C
+    2300044: Stick_Wall_1A1_C_LOD_1
+    2300046: Stick_Wall_1A1_C_LOD_2
+    3300000: Branch_1A1_A
+    3300002: Branch_1A1_A_LOD_1
+    3300004: Branch_1A1_B
+    3300006: Branch_1A1_B_LOD_1
+    3300008: Branch_1A1_C
+    3300010: Branch_1A1_C_LOD_1
+    3300012: Branch_1A2_A
+    3300014: Branch_1A2_A_LOD_1
+    3300016: Branch_1A2_B
+    3300018: Branch_1A2_B_LOD_1
+    3300020: Branch_1A2_C
+    3300022: Branch_1A2_C_LOD_1
+    3300024: Stick_Wall_1A1_A
+    3300026: Stick_Wall_1A1_A_2
+    3300028: Stick_Wall_1A1_A_2_LOD_1
+    3300030: Stick_Wall_1A1_A_2_LOD_2
+    3300032: Stick_Wall_1A1_A_LOD_1
+    3300034: Stick_Wall_1A1_A_LOD_2
+    3300036: Stick_Wall_1A1_B
+    3300038: Stick_Wall_1A1_B_LOD_1
+    3300040: Stick_Wall_1A1_B_LOD_2
+    3300042: Stick_Wall_1A1_C
+    3300044: Stick_Wall_1A1_C_LOD_1
+    3300046: Stick_Wall_1A1_C_LOD_2
+    4300000: Stick_Wall_1A1_A_2_LOD_2
+    4300002: Stick_Wall_1A1_C_LOD_2
+    4300004: Stick_Wall_1A1_B_LOD_2
+    4300006: Stick_Wall_1A1_A_LOD_2
+    4300008: Stick_Wall_1A1_A_LOD_1
+    4300010: Stick_Wall_1A1_B_LOD_1
+    4300012: Stick_Wall_1A1_C_LOD_1
+    4300014: Stick_Wall_1A1_A_2_LOD_1
+    4300016: Branch_1A1_A_LOD_1
+    4300018: Branch_1A1_B_LOD_1
+    4300020: Branch_1A1_C_LOD_1
+    4300022: Branch_1A2_C_LOD_1
+    4300024: Branch_1A2_B_LOD_1
+    4300026: Branch_1A2_A_LOD_1
+    4300028: Branch_1A2_A
+    4300030: Branch_1A2_B
+    4300032: Branch_1A2_C
+    4300034: Stick_Wall_1A1_A_2
+    4300036: Stick_Wall_1A1_C
+    4300038: Stick_Wall_1A1_B
+    4300040: Branch_1A1_C
+    4300042: Branch_1A1_B
+    4300044: Branch_1A1_A
+    4300046: Stick_Wall_1A1_A
+    6400000: Branch_1A1_A
+    6400002: Branch_1A1_A_LOD_1
+    6400004: Branch_1A1_B
+    6400006: Branch_1A1_B_LOD_1
+    6400008: Branch_1A1_C
+    6400010: Branch_1A1_C_LOD_1
+    6400012: Branch_1A2_A
+    6400014: Branch_1A2_A_LOD_1
+    6400016: Branch_1A2_B
+    6400018: Branch_1A2_B_LOD_1
+    6400020: Branch_1A2_C
+    6400022: Branch_1A2_C_LOD_1
+    6400024: Stick_Wall_1A1_A
+    6400026: Stick_Wall_1A1_A_2
+    6400028: Stick_Wall_1A1_A_2_LOD_1
+    6400030: Stick_Wall_1A1_A_2_LOD_2
+    6400032: Stick_Wall_1A1_A_LOD_1
+    6400034: Stick_Wall_1A1_A_LOD_2
+    6400036: Stick_Wall_1A1_B
+    6400038: Stick_Wall_1A1_B_LOD_1
+    6400040: Stick_Wall_1A1_B_LOD_2
+    6400042: Stick_Wall_1A1_C
+    6400044: Stick_Wall_1A1_C_LOD_1
+    6400046: Stick_Wall_1A1_C_LOD_2
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 1
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
