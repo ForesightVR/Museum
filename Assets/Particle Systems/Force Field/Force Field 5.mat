@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Force Field 4
+  m_Name: Force Field 5
   m_Shader: {fileID: 4800000, guid: a86051229156cae42afa96fc66a7dd7e, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 5
@@ -70,13 +70,13 @@ Material:
     - _Mode: 0
     - _OcclusionStrength: 1
     - _Parallax: 0.02
-    - _Rim: 0.575
-    - _Speed: 1.87
+    - _Rim: 0
+    - _Speed: 5
     - _SrcBlend: 1
-    - _Strength: 2.59
+    - _Strength: 5
     - _Tile: 10
     - _UVSec: 0
     - _ZWrite: 1
     m_Colors:
-    - _Color: {r: 0, g: 0.605, b: 1, a: 1}
+    - _Color: {r: 1, g: 0.23851746, b: 0, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
