@@ -974,11 +974,11 @@ namespace Valve.VR.InteractionSystem
 		private IEnumerator TeleportHintCoroutine()
 		{
 			float prevBreakTime = Time.time;
-			float prevHapticPulseTime = Time.time;
+		//	float prevHapticPulseTime = Time.time;
 
 			while ( true )
 			{
-				bool pulsed = false;
+			//	bool pulsed = false;
 
 				//Show the hint on each eligible hand
 				foreach ( Hand hand in player.hands )
@@ -991,16 +991,16 @@ namespace Valve.VR.InteractionSystem
 						{
 							ControllerButtonHints.ShowTextHint( hand, teleportAction, "Teleport" );
 							prevBreakTime = Time.time;
-							prevHapticPulseTime = Time.time;
+							//prevHapticPulseTime = Time.time;
 						}
 
-						if ( Time.time > prevHapticPulseTime + 0.05f )
-						{
+					//	if ( Time.time > prevHapticPulseTime + 0.05f )
+					//	{
 							//Haptic pulse for a few seconds
-							pulsed = true;
+							//pulsed = true;
 
-							hand.TriggerHapticPulse( 500 );
-						}
+							//hand.TriggerHapticPulse( 500 );
+					//	}
 					}
 					else if ( !showHint && isShowingHint )
 					{
@@ -1016,10 +1016,10 @@ namespace Valve.VR.InteractionSystem
 					prevBreakTime = Time.time;
 				}
 
-				if ( pulsed )
-				{
-					prevHapticPulseTime = Time.time;
-				}
+				//if ( pulsed )
+				//{
+				//	prevHapticPulseTime = Time.time;
+				//}
 
 				yield return null;
 			}
