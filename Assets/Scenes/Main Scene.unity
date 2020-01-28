@@ -247,7 +247,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &911875128
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -422,13 +422,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1361607727}
-  m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
+  m_LocalRotation: {x: 0.0075862785, y: -0.25881103, z: 0.002032737, w: 0.96589607}
   m_LocalPosition: {x: 10.572361, y: 6.787995, z: -2.3765726}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+  m_LocalEulerAnglesHint: {x: 0.9, y: -30, z: 0}
 --- !u!1 &1640029600
 GameObject:
   m_ObjectHideFlags: 0
@@ -447,7 +447,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!64 &1640029601
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -480,7 +480,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 64c614053b9cb6c41a290f817f0a4fdf, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -734,6 +734,12 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: a5a6ed474b80aa54ca244494bfea2277, type: 2}
+    - target: {fileID: 7068375028870545626, guid: dc06161b6d97feb419f45f03b62e14b9,
+        type: 3}
+      propertyPath: description
+      value: 'The Oneida Nation of Wisconsin are descendants of an indigenous Iroquoian-speaking
+        nation that arose in present-day central-western New York. '
+      objectReference: {fileID: 0}
     - target: {fileID: 7068375028870545631, guid: dc06161b6d97feb419f45f03b62e14b9,
         type: 3}
       propertyPath: m_AnchorMin.y
@@ -764,6 +770,12 @@ PrefabInstance:
       propertyPath: sceneLoader
       value: 
       objectReference: {fileID: 855669019}
+    - target: {fileID: 7068375029226165064, guid: dc06161b6d97feb419f45f03b62e14b9,
+        type: 3}
+      propertyPath: description
+      value: TRUE Skool's mission is to ENGAGE , EDUCATE & EMPOWER youth and communities
+        through the Creative Arts and Hip Hop Culture!
+      objectReference: {fileID: 0}
     - target: {fileID: 7068375029226165069, guid: dc06161b6d97feb419f45f03b62e14b9,
         type: 3}
       propertyPath: m_AnchorMin.y
@@ -789,10 +801,38 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7068375029319219726, guid: dc06161b6d97feb419f45f03b62e14b9,
+        type: 3}
+      propertyPath: m_fontSize
+      value: 0.04
+      objectReference: {fileID: 0}
+    - target: {fileID: 7068375029319219726, guid: dc06161b6d97feb419f45f03b62e14b9,
+        type: 3}
+      propertyPath: m_fontSizeBase
+      value: 0.04
+      objectReference: {fileID: 0}
+    - target: {fileID: 7068375029319219726, guid: dc06161b6d97feb419f45f03b62e14b9,
+        type: 3}
+      propertyPath: m_text
+      value: Islands of Brilliance (IOB) is a learning experience developed specifically
+        for children and young adults on the autism spectrum.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7068375029347116060, guid: dc06161b6d97feb419f45f03b62e14b9,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: aa61ab87ebb61c741af789ff30e9d9e1,
+        type: 3}
     - target: {fileID: 7068375029503538017, guid: dc06161b6d97feb419f45f03b62e14b9,
         type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7068375030363073985, guid: dc06161b6d97feb419f45f03b62e14b9,
+        type: 3}
+      propertyPath: description
+      value: Islands of Brilliance (IOB) is a learning experience developed specifically
+        for children and young adults on the autism spectrum.
       objectReference: {fileID: 0}
     - target: {fileID: 7068375030363073986, guid: dc06161b6d97feb419f45f03b62e14b9,
         type: 3}

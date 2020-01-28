@@ -3062,7 +3062,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 7ff9dc4063dbcf148b33ea9441811c33, type: 2}
+  - {fileID: 2100000, guid: a5a6ed474b80aa54ca244494bfea2277, type: 2}
   - {fileID: 2100000, guid: 6947d41640233a647b4434376433c24c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -3093,8 +3093,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 977128472622142094}
-  - component: {fileID: 2164720507415637907}
-  - component: {fileID: 5491716922078954025}
   m_Layer: 0
   m_Name: TextPlus001
   m_TagString: Untagged
@@ -3112,57 +3110,11 @@ Transform:
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
   m_LocalPosition: {x: 0.0026764707, y: 0.012009031, z: -0.88610077}
   m_LocalScale: {x: 66.326836, y: 66.326836, z: 66.326836}
-  m_Children: []
+  m_Children:
+  - {fileID: 1488696395432066379}
   m_Father: {fileID: 8811676976690392273}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &2164720507415637907
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4720279191003012092}
-  m_Mesh: {fileID: -1732647622341758642, guid: 7812b6f92d1829144aab6e12530dac27, type: 3}
---- !u!23 &5491716922078954025
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4720279191003012092}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: e85233a796d888045a99bbaa6585d05d, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
 --- !u!1 &5481448501601148610
 GameObject:
   m_ObjectHideFlags: 0
@@ -3745,10 +3697,10 @@ RectTransform:
   m_Father: {fileID: 7068375028664252837}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 0.375, y: -0.7166667}
-  m_SizeDelta: {x: 0.8, y: 0.56666666}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0.8, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7068375028870545629
 CanvasRenderer:
@@ -3813,7 +3765,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sceneInterface: {fileID: 7068375028922877524}
   logo: {fileID: 21300000, guid: 3f0611ccc2fe00248be92c3a2f4bcd49, type: 3}
-  description: This is a description for the Islands of Brilliance museum.
+  description: 'The Oneida Nation of Wisconsin are descendants of an indigenous Iroquoian-speaking
+    nation that arose in present-day central-western New York. '
   sceneName: Oneida
   source: {fileID: 3003710552757580205}
   buttonSound: {fileID: 8300000, guid: 2acc4f7a6f73f5446b568c4a8381ff8d, type: 3}
@@ -3965,10 +3918,10 @@ RectTransform:
   m_Father: {fileID: 7068375028664252837}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 0.375, y: -0.50000006}
-  m_SizeDelta: {x: 0.8, y: 0.56666666}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: -0.5}
+  m_SizeDelta: {x: 0.8, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7068375029226165067
 CanvasRenderer:
@@ -4033,7 +3986,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sceneInterface: {fileID: 7068375028922877524}
   logo: {fileID: 21300000, guid: 926e5ae3311f0bf4095532c1eca96f54, type: 3}
-  description: This is a description for the Islands of Brilliance museum.
+  description: TRUE Skool's mission is to ENGAGE , EDUCATE & EMPOWER youth and communities
+    through the Creative Arts and Hip Hop Culture!
   sceneName: True Skool
   source: {fileID: 3003710552757580205}
   buttonSound: {fileID: 8300000, guid: 2acc4f7a6f73f5446b568c4a8381ff8d, type: 3}
@@ -4119,7 +4073,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: This is an example of a sentance simply created to test the length of sentances.
+  m_text: Islands of Brilliance (IOB) is a learning experience developed specifically
+    for children and young adults on the autism spectrum.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -4147,8 +4102,8 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 0.05
-  m_fontSizeBase: 0.05
+  m_fontSize: 0.04
+  m_fontSizeBase: 0.04
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -4274,7 +4229,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: aa61ab87ebb61c741af789ff30e9d9e1, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4728,10 +4683,10 @@ RectTransform:
   m_Father: {fileID: 7068375028664252837}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 0.375, y: -0.28333333}
-  m_SizeDelta: {x: 0.8, y: 0.56666666}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0.8, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7068375030363073984
 CanvasRenderer:
@@ -4796,7 +4751,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sceneInterface: {fileID: 7068375028922877524}
   logo: {fileID: 21300000, guid: aa61ab87ebb61c741af789ff30e9d9e1, type: 3}
-  description: This is a description for the Islands of Brilliance museum.
+  description: Islands of Brilliance (IOB) is a learning experience developed specifically
+    for children and young adults on the autism spectrum.
   sceneName: Island of Brilliance
   source: {fileID: 3003710552757580205}
   buttonSound: {fileID: 8300000, guid: 2acc4f7a6f73f5446b568c4a8381ff8d, type: 3}
@@ -4847,15 +4803,15 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8682112563060407499}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.03, y: 0.005, z: 0.03}
+  m_LocalRotation: {x: -0.043619405, y: 0, z: 0, w: 0.9990483}
+  m_LocalPosition: {x: 0, y: 0.005, z: 0}
+  m_LocalScale: {x: 0.03, y: 0.02, z: 0.03}
   m_Children:
   - {fileID: 2096013441935935492}
   - {fileID: 4486020677612967455}
   m_Father: {fileID: 1381264238119593019}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -5, y: 0, z: 0}
 --- !u!33 &2811267094588656305
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -5479,6 +5435,101 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 5895877896102196385}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5895877896126879313
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 977128472622142094}
+    m_Modifications:
+    - target: {fileID: -4216859302048453862, guid: 6f28262459140c7468ef84172275ba92,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.000046348
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 6f28262459140c7468ef84172275ba92,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.010836
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 6f28262459140c7468ef84172275ba92,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.0050234
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 6f28262459140c7468ef84172275ba92,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 6f28262459140c7468ef84172275ba92,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 6f28262459140c7468ef84172275ba92,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.000000042146848
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 6f28262459140c7468ef84172275ba92,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 6f28262459140c7468ef84172275ba92,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 6f28262459140c7468ef84172275ba92,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 6f28262459140c7468ef84172275ba92,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 6f28262459140c7468ef84172275ba92,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 6f28262459140c7468ef84172275ba92,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.013404676
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 6f28262459140c7468ef84172275ba92,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.019847134
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 6f28262459140c7468ef84172275ba92,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: -1504981713932161579, guid: 6f28262459140c7468ef84172275ba92,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e85233a796d888045a99bbaa6585d05d, type: 2}
+    - target: {fileID: -927199367670048503, guid: 6f28262459140c7468ef84172275ba92,
+        type: 3}
+      propertyPath: m_Name
+      value: Foresight Museums LOGO
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6f28262459140c7468ef84172275ba92, type: 3}
+--- !u!4 &1488696395432066379 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 6f28262459140c7468ef84172275ba92,
+    type: 3}
+  m_PrefabInstance: {fileID: 5895877896126879313}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &7068375029565731756
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5573,15 +5624,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad7f51e5bef754e48b338bf0d3af5f95, type: 3}
---- !u!1 &2096013441935935489 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 9151702284596984749, guid: ad7f51e5bef754e48b338bf0d3af5f95,
-    type: 3}
-  m_PrefabInstance: {fileID: 7068375029565731756}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2096013441935935492 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9151702284596984744, guid: ad7f51e5bef754e48b338bf0d3af5f95,
+    type: 3}
+  m_PrefabInstance: {fileID: 7068375029565731756}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2096013441935935489 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9151702284596984749, guid: ad7f51e5bef754e48b338bf0d3af5f95,
     type: 3}
   m_PrefabInstance: {fileID: 7068375029565731756}
   m_PrefabAsset: {fileID: 0}
