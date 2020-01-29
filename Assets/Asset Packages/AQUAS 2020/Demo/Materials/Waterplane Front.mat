@@ -141,14 +141,14 @@ Material:
     - _MediumTilingDistance: 100
     - _Metallic: 0
     - _Mode: 0
-    - _NormalStrength: 0.99
-    - _NormalTiling: 0.792
+    - _NormalStrength: 0.15
+    - _NormalTiling: 0.17
     - _OcclusionStrength: 1
     - _Parallax: 0.02
     - _PhysicalNormalStrength: 0
-    - _ProbeReflectionIntensity: 0.392
+    - _ProbeReflectionIntensity: 1
     - _ProjectGrid: 0
-    - _RealtimeReflectionIntensity: 0.516
+    - _RealtimeReflectionIntensity: 1
     - _Refraction: 0.404
     - _RippleStrength: 0.5
     - _Scale0: 0
