@@ -9,7 +9,7 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: Waterplane Front
   m_Shader: {fileID: 4800000, guid: 2ddb6ae8a98f0254ab50e31f1d992ec8, type: 3}
-  m_ShaderKeywords: _ENABLEREALTIMEREFLECTIONS_ON _ENABLEREFLECTIONS_ON
+  m_ShaderKeywords: _ENABLEREFLECTIONS_ON
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -116,12 +116,12 @@ Material:
     - _DepthTransparency: 0.2
     - _DetailNormalMapScale: 1
     - _DirtDensity: 0
-    - _DistanceFade: 0.5
+    - _DistanceFade: 0.19
     - _DistanceVisibility: 0
-    - _Distortion: 0.737
+    - _Distortion: 1
     - _DstBlend: 0
     - _EnableProbeRelfections: 0
-    - _EnableRealtimeReflections: 1
+    - _EnableRealtimeReflections: 0
     - _Fade: 2.12
     - _FarTilingDistance: 1000
     - _FlowSpeed: 0
@@ -131,36 +131,36 @@ Material:
     - _FoamSpeed: 0.1
     - _FoamTiling: 1.019
     - _FoamVisibility: 1
-    - _Gloss: 0.78
+    - _Gloss: 0.8
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
     - _Intensity: 0
-    - _LightWrapping: 0
+    - _LightWrapping: 0.34
     - _LinearColorSpace: 0
-    - _MediumTilingDistance: 100
+    - _MediumTilingDistance: 402.8
     - _Metallic: 0
     - _Mode: 0
-    - _NormalStrength: 0.15
-    - _NormalTiling: 0.17
+    - _NormalStrength: 0.08
+    - _NormalTiling: 0.58
     - _OcclusionStrength: 1
     - _Parallax: 0.02
     - _PhysicalNormalStrength: 0
     - _ProbeReflectionIntensity: 1
     - _ProjectGrid: 0
     - _RealtimeReflectionIntensity: 1
-    - _Refraction: 0.404
+    - _Refraction: 0
     - _RippleStrength: 0.5
     - _Scale0: 0
     - _Scale1: 0
     - _Scale2: 0
     - _Scale3: 0
-    - _ShorelineBlend: 0.731
+    - _ShorelineBlend: 0
     - _ShorelineFrequency: 22.4
-    - _ShorelineNormalStrength: 0.848
-    - _ShorelineSpeed: 0.0257
+    - _ShorelineNormalStrength: 0
+    - _ShorelineSpeed: 0
     - _SmoothnessTextureChannel: 0
-    - _Specular: 17
+    - _Specular: 22.16
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _TransparencyFade: 1
