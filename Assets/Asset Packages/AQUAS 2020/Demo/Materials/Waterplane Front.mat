@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Waterplane Front
-  m_Shader: {fileID: 4800000, guid: 936dff064b3d8e0498bdd9256b442d46, type: 3}
+  m_Shader: {fileID: 4800000, guid: 2ddb6ae8a98f0254ab50e31f1d992ec8, type: 3}
   m_ShaderKeywords: _ENABLEREALTIMEREFLECTIONS_ON _ENABLEREFLECTIONS_ON
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -71,6 +71,10 @@ Material:
         m_Texture: {fileID: 2800000, guid: 15f5278be96c0184fa0b0fa59e90a43a, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _RandomMask1:
+        m_Texture: {fileID: 2800000, guid: 15f5278be96c0184fa0b0fa59e90a43a, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _ReflectionTex:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -111,6 +115,7 @@ Material:
     - _DepthFade: 0
     - _DepthTransparency: 0.2
     - _DetailNormalMapScale: 1
+    - _DirtDensity: 0
     - _DistanceFade: 0.5
     - _DistanceVisibility: 0
     - _Distortion: 0.737
@@ -176,6 +181,7 @@ Material:
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _DeepWaterColor: {r: 0.27816713, g: 0.339844, b: 0.44339496, a: 0}
+    - _DirtColor: {r: 0, g: 0, b: 0, a: 0}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _FoamColor: {r: 1, g: 1, b: 1, a: 0}
     - _MainColor: {r: 0.47641504, g: 1, b: 0.80650115, a: 0}
