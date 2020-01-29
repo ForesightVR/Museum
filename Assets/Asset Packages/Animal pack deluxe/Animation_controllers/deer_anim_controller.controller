@@ -30,7 +30,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Deer_eat
-  m_Speed: 1
+  m_Speed: 0.2
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: -6714918682458784725}
@@ -112,7 +112,7 @@ AnimatorStateMachine:
     m_Position: {x: 210, y: 270, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -344274863081286490}
-    m_Position: {x: 570.8269, y: 397.68298, z: 0}
+    m_Position: {x: 570, y: 400, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 6178053291990364982}
     m_Position: {x: 630, y: 280, z: 0}

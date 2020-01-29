@@ -131,12 +131,12 @@ Material:
     - _FoamSpeed: 0.1
     - _FoamTiling: 1.019
     - _FoamVisibility: 1
-    - _Gloss: 0.7
+    - _Gloss: 0.78
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
     - _Intensity: 0
-    - _LightWrapping: 2
+    - _LightWrapping: 0
     - _LinearColorSpace: 0
     - _MediumTilingDistance: 100
     - _Metallic: 0
@@ -160,7 +160,7 @@ Material:
     - _ShorelineNormalStrength: 0.848
     - _ShorelineSpeed: 0.0257
     - _SmoothnessTextureChannel: 0
-    - _Specular: 1
+    - _Specular: 17
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _TransparencyFade: 1
