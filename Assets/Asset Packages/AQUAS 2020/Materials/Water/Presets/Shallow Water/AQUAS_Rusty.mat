@@ -4,8 +4,9 @@
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_Name: AQUAS_Rusty
   m_Shader: {fileID: 4800000, guid: 2ddb6ae8a98f0254ab50e31f1d992ec8, type: 3}
   m_ShaderKeywords: _ENABLEREALTIMEREFLECTIONS_ON _ENABLEREFLECTIONS_ON
@@ -121,7 +122,7 @@ Material:
     - _Depth: 1
     - _DepthFade: 1
     - _DepthTransparency: 0.2
-    - _DirtDensity: 0.268
+    - _DirtDensity: 0.191
     - _DistanceFade: 0.5
     - _Distortion: 0.737
     - _EdgeLength: 15
@@ -160,15 +161,15 @@ Material:
     - _MediumDistanceFalloff: 2.56
     - _MediumTilingDistance: 100
     - _MediumTilingFade: 1
-    - _NormalStrength: 0.99
-    - _NormalTiling: 0.792
+    - _NormalStrength: 2
+    - _NormalTiling: 0.222
     - _ObjectRotation: 0
     - _PhysicalNormalStrength: 0
-    - _ProbeReflectionIntensity: 0.392
+    - _ProbeReflectionIntensity: 0.316
     - _ProjectGrid: 0
-    - _RealtimeReflectionIntensity: 0.551
+    - _RealtimeReflectionIntensity: 0.615
     - _ReflectionIntensity: 0.546
-    - _Refraction: 0.404
+    - _Refraction: 0
     - _Refraction2: 0
     - _RippleStrength: 0.5
     - _Scale0: 0
@@ -219,13 +220,13 @@ Material:
     - _Color1: {r: 0.8207547, g: 0, b: 0, a: 0}
     - _DeepColor: {r: 0, g: 0, b: 0, a: 0}
     - _DeepWaterColor: {r: 0.3137255, g: 0.52069914, b: 0.67058825, a: 0}
-    - _DirtColor: {r: 0.7830189, g: 0.49547786, b: 0.3508811, a: 0}
+    - _DirtColor: {r: 0.16731933, g: 0.47159082, b: 0.754717, a: 0}
     - _FoamColor: {r: 1, g: 1, b: 1, a: 0}
     - _MainColor: {r: 0.476415, g: 1, b: 0.8065012, a: 0}
     - _ObjectScale: {r: 0, g: 0, b: 0, a: 0}
     - _RangeVector: {r: 0, g: 0, b: 0, a: 0}
     - _ShalowColor: {r: 1, g: 1, b: 1, a: 0}
     - _SpecColor: {r: 1, g: 0.8666667, b: 0, a: 1}
-    - _SpecularColor: {r: 1, g: 0.9522753, b: 0.7971698, a: 0}
+    - _SpecularColor: {r: 0.7783019, g: 0.8685568, b: 1, a: 0}
     - _Vector1: {r: 1.18, g: 1.36, b: -0.45, a: 0}
     - _Vector3: {r: 1, g: 1, b: 1, a: 1}

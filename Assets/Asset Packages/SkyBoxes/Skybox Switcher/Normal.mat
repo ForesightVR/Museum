@@ -30,7 +30,7 @@ Material:
     - _Saturation: 77
     - _StepSize: 355
     - _Tile: 342.86
-    - _Volsteps: 4.7
+    - _Volsteps: 5.85
     m_Colors:
     - _Center: {r: 1, g: 0.3, b: 0.5, a: 0.12}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
