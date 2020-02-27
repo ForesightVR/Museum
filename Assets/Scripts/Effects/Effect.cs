@@ -11,7 +11,7 @@ public class Effect : MonoBehaviour
     public string[] methodArray;
 
     [StringSelector("methodArray")]
-    public string chosenMethod;
+    public string chosenMethod = "1";
 
     public List<string> GetMethodNames(Type myType)
     {

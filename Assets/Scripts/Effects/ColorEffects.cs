@@ -6,6 +6,9 @@ using UnityEngine.UI;
 [ExecuteInEditMode]
 public class ColorEffects : Effect
 {
+    [DisplayIfStringMatch("chosenMethod", "ChangeColor")]
+    public Color color;
+
     void Awake()
     {
         methodArray = GetMethodNames((typeof(ColorEffects))).ToArray();
