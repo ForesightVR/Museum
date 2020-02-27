@@ -1027,6 +1027,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   effects: []
+  methodArray: []
+  testString: 
 --- !u!65 &921600448
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1901,6 +1903,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   effects: []
+  methodArray: []
+  testString: 
 --- !u!114 &2090843409
 MonoBehaviour:
   m_ObjectHideFlags: 0

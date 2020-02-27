@@ -8,10 +8,9 @@ using System.Collections.Generic;
 [CustomPropertyDrawer(typeof(TagSelectorAttribute))]
 public class TagSelectorPropertyDrawer : PropertyDrawer
 {
-
     public override void OnGUI(Rect position, SerializedProperty property, GUIContent label)
     {
-        if (property.propertyType == SerializedPropertyType.String)
+        if (property.propertyType == SerializedPropertyType.String) /// if the variable you're setting isn't a string, this doesn't work
         {
             EditorGUI.BeginProperty(position, label, property);
 

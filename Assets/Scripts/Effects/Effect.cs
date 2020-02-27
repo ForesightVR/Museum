@@ -5,32 +5,43 @@ using System.Linq;
 using System.Reflection;
 using UnityEngine;
 
-[ExecuteInEditMode]
 public class Effect : MonoBehaviour
 {
-    public Effect[] effects;
-    public enum EffectTypes { };
+    [HideInInspector]
+    public string[] methodArray;
 
-    EffectTypes effectType;
+    [StringSelector("methodArray")]
+    public string chosenMethod;
 
-    public string[] methodNames = { "name", "anotherName", "oneMoreName"};
-
-    protected virtual void Awake()
+    public List<string> GetMethodNames(Type myType)
     {
-
-
-
-        Type myType = (typeof(ButtonEffects));
+        List<string> methodNames = new List<string>();
         MethodInfo[] myArrayMethodInfo = myType.GetMethods(BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly);
         for (int i = 0; i < myArrayMethodInfo.Length; i++)
         {
             MethodInfo myMethodInfo = (MethodInfo)myArrayMethodInfo[i];
-           // effectType = methodNames;
-
-           // methodNames.Add(myMethodInfo.Name);
+            methodNames.Add(myMethodInfo.Name);
+            print(myMethodInfo.Name);
         }
 
+        return methodNames;
     }
+
+    /*protected virtual void Awake()
+    {
+        List<string> methodNames = new List<string>();
+        MethodInfo[] myArrayMethodInfo = myType.GetMethods(BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly);
+        for (int i = 0; i < myArrayMethodInfo.Length; i++)
+        {
+            MethodInfo myMethodInfo = (MethodInfo)myArrayMethodInfo[i];
+            methodNames.Add(myMethodInfo.Name);
+            print(myMethodInfo.Name);
+        }
+
+        methodArray = methodNames.ToArray();
+
+        print(methodArray.Length);
+    }*/
 
     public virtual void InvokeEffect() { }
 }

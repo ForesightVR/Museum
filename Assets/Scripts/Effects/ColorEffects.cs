@@ -3,22 +3,21 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class ColorEffects : MonoBehaviour
+[ExecuteInEditMode]
+public class ColorEffects : Effect
 {
-    // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        methodArray = GetMethodNames((typeof(ColorEffects))).ToArray();
     }
 
     public void ChangeColor(Color32 color)
     {
         gameObject.GetComponent<Image>().color = color;
+    }
+
+    public void ColorBlack()
+    {
+        gameObject.GetComponent<Image>().color = Color.black;
     }
 }
