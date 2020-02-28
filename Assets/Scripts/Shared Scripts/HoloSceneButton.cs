@@ -1,9 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using Valve.VR.InteractionSystem;
 public class HoloSceneButton : MonoBehaviour
 {
+    public UnityEvent holoClick;
     public HoloSceneInterface sceneInterface;
     public Sprite logo;
     [TextArea]
@@ -23,14 +25,17 @@ public class HoloSceneButton : MonoBehaviour
         player = Player.instance;
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter(Collider other) // -> cause
     {
-        if (other.transform.tag.Equals("Finger"))
+        if (other.transform.tag.Equals("Finger")) // -> Enum Check
         {
-            source.PlayOneShot(buttonSound);
+            holoClick?.Invoke(); // -> effect
+
+            source.PlayOneShot(buttonSound); // -> in the inspector
             animator.SetTrigger("Pressed");
             player.rightHand.TriggerHapticPulse(500);
-            sceneInterface.SetInfo(logo, description, sceneName);
+
+            sceneInterface.SetInfo(logo, description, sceneName); // -> also in the inspector
         }
     }
 }
