@@ -11,7 +11,7 @@ public class Effect : MonoBehaviour
     public string[] methodArray;
 
     [StringSelector("methodArray")]
-    public string chosenMethod = "1";
+    public string chosenMethod;
 
     public List<string> GetMethodNames(Type myType)
     {
@@ -21,7 +21,6 @@ public class Effect : MonoBehaviour
         {
             MethodInfo myMethodInfo = (MethodInfo)myArrayMethodInfo[i];
             methodNames.Add(myMethodInfo.Name);
-            print(myMethodInfo.Name);
         }
 
         return methodNames;

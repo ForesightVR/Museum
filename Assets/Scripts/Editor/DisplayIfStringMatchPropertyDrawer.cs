@@ -19,7 +19,12 @@ public class DisplayIfStringMatchPropertyDrawer : PropertyDrawer
 
         GUI.enabled = wasEnabled;        
     }
-
+    /// <summary>
+    /// Changes the size of the editor window to allow the variable to be displayed
+    /// </summary>
+    /// <param name="property"></param>
+    /// <param name="label"></param>
+    /// <returns></returns>
     public override float GetPropertyHeight(SerializedProperty property, GUIContent label)
     {
         DisplayIfStringMatchAttribute condHAtt = (DisplayIfStringMatchAttribute)attribute;
@@ -52,6 +57,7 @@ public class DisplayIfStringMatchPropertyDrawer : PropertyDrawer
         return height;*/
     }
 
+    //If true, the variable appears. If false, the variable doesn't appear.
     bool CheckIfStringMatches(DisplayIfStringMatchAttribute att, SerializedProperty property)
     {
         string propertyPath = property.propertyPath; //returns the property path of the property we want to apply the attribute to
