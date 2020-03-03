@@ -12,7 +12,5 @@ public class ButtonEffects : Effect
         methodArray = GetMethodNames((typeof(ButtonEffects))).ToArray();
     }
 
-    public void AutomateIt() { }
-
     IEnumerator DoCoroutinesWork() { yield return new WaitForSeconds(3.14f); }
 }

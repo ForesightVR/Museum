@@ -14,7 +14,8 @@ namespace Valve.VR.InteractionSystem
     public enum WhichHand
     {
         Left,
-        Right
+        Right,
+        Both
     }
 
     [RequireComponent(typeof(Throwable))]
