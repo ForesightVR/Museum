@@ -47819,21 +47819,21 @@ Cloth:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1500009842}
   m_Enabled: 1
-  m_StretchingStiffness: 0
+  m_StretchingStiffness: 1
   m_BendingStiffness: 0.03
   m_UseTethers: 1
   m_UseGravity: 1
-  m_Damping: 0.05
-  m_ExternalAcceleration: {x: -1, y: 0.5, z: -0.2}
-  m_RandomAcceleration: {x: 0.01, y: -0.2, z: 5}
-  m_WorldVelocityScale: 0.2
-  m_WorldAccelerationScale: 0.11
-  m_Friction: 0.39
-  m_CollisionMassScale: 0.25
+  m_Damping: 0.09
+  m_ExternalAcceleration: {x: 0, y: -0.21, z: 0.3}
+  m_RandomAcceleration: {x: 0.24, y: -0.08, z: 3}
+  m_WorldVelocityScale: 0.18
+  m_WorldAccelerationScale: 1.5
+  m_Friction: 0
+  m_CollisionMassScale: 1.7
   m_UseContinuousCollision: 1
   m_UseVirtualParticles: 1
-  m_SolverFrequency: 120
-  m_SleepThreshold: 0
+  m_SolverFrequency: 1.57
+  m_SleepThreshold: 0.02
   m_Coefficients:
   - maxDistance: 5
     collisionSphereDistance: 3.4028235e+38
