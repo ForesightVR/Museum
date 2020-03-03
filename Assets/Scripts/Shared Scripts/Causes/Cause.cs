@@ -5,11 +5,11 @@ using UnityEngine.Events;
 
 public class Cause : MonoBehaviour
 {
-    public List<Effect> effects;
+    public List<Effect> activateEffects;
 
-    public void ActivateEffect()
+    public void ActivateEffects()
     {
-        foreach (Effect effect in effects)
+        foreach (Effect effect in activateEffects)
             effect?.Invoke(effect.chosenMethod, 0);
     }
 }

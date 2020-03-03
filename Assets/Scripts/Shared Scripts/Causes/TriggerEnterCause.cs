@@ -12,7 +12,7 @@ public class TriggerEnterCause : Cause
     {
         if (triggerTags.Contains(other.tag)) // -> Enum Check
         {
-            ActivateEffect();
+            ActivateEffects();
 
             //source.PlayOneShot(buttonSound); // -> in the inspector
             //animator.SetTrigger("Pressed");

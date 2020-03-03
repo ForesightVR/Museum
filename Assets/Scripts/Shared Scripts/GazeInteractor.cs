@@ -2,12 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GazeInteractor : MonoBehaviour
+public class GazeCause : BinaryCause
 {
     public float gazeRadius = .5f;
     public LayerMask interactionLayer;
 
-    Interactable interactable;
+    Transform gazeTarget;
     private void Update()
     {
         Ray ray = new Ray(transform.position, transform.forward);
@@ -15,14 +15,18 @@ public class GazeInteractor : MonoBehaviour
 
         if (Physics.SphereCast(ray, gazeRadius, out hit, 150f, interactionLayer))
         {
-            Debug.Log(hit.transform);
-            interactable = hit.transform.GetComponent<Interactable>();
-            interactable?.Interacting();
+            Transform target = hit.transform;
+
+            if(target != gazeTarget)
+            {
+                gazeTarget = target;
+                ActivateEffects();
+            }
         }
-        else if(interactable)
+        else if(gazeTarget)
         {
-            interactable.StoppedInteracting();
-            interactable = null;
+            DeactivateEffects();
+            gazeTarget = null;
         }
     }
 
