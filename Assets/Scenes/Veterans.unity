@@ -29434,7 +29434,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: ddd2fc87a7799ea429b346b63120adce,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.43
+      value: -0.174
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: ddd2fc87a7799ea429b346b63120adce,
         type: 3}
@@ -34410,7 +34410,7 @@ PrefabInstance:
     - target: {fileID: 2051225637856711561, guid: 7e5adbe91cf2eec49aeb28840215e4bf,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.042
+      value: 0.002
       objectReference: {fileID: 0}
     - target: {fileID: 2051225637856711561, guid: 7e5adbe91cf2eec49aeb28840215e4bf,
         type: 3}
@@ -34420,7 +34420,7 @@ PrefabInstance:
     - target: {fileID: 2051225637856711561, guid: 7e5adbe91cf2eec49aeb28840215e4bf,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.128
+      value: -0.009
       objectReference: {fileID: 0}
     - target: {fileID: 2051225637856711561, guid: 7e5adbe91cf2eec49aeb28840215e4bf,
         type: 3}
@@ -47819,20 +47819,20 @@ Cloth:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1500009842}
   m_Enabled: 1
-  m_StretchingStiffness: 0.18
-  m_BendingStiffness: 0
+  m_StretchingStiffness: 0
+  m_BendingStiffness: 0.03
   m_UseTethers: 1
   m_UseGravity: 1
-  m_Damping: 0.21
-  m_ExternalAcceleration: {x: 0, y: 0, z: 0}
-  m_RandomAcceleration: {x: 0.08, y: -0.07, z: 10.06}
-  m_WorldVelocityScale: 2.22
-  m_WorldAccelerationScale: 0.8
-  m_Friction: 0
-  m_CollisionMassScale: 0.03
+  m_Damping: 0.05
+  m_ExternalAcceleration: {x: -1, y: 0.5, z: -0.2}
+  m_RandomAcceleration: {x: 0.01, y: -0.2, z: 5}
+  m_WorldVelocityScale: 0.2
+  m_WorldAccelerationScale: 0.11
+  m_Friction: 0.39
+  m_CollisionMassScale: 0.25
   m_UseContinuousCollision: 1
   m_UseVirtualParticles: 1
-  m_SolverFrequency: 38.85
+  m_SolverFrequency: 120
   m_SleepThreshold: 0
   m_Coefficients:
   - maxDistance: 5
@@ -48083,7 +48083,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 3b1c461833b71114f8478f64a06ff375, type: 2}
+  - {fileID: 2100000, guid: fe0ff53ba2755fc4481179b2c1930bb5, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
