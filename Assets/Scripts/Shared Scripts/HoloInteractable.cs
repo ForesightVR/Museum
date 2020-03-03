@@ -24,7 +24,7 @@ public class HoloInteractable : Interactable
     {
         if (!hologram.activeInHierarchy)
         {
-            player.leftHand.TriggerHapticPulse(1000);
+            //player.leftHand.TriggerHapticPulse(1000);
             source.PlayOneShot(onSound);
             hologram.gameObject.SetActive(true);
             hologramProjector.SetActive(true);
@@ -36,7 +36,7 @@ public class HoloInteractable : Interactable
     {
         if (hologram.activeInHierarchy)
         {
-            player.leftHand.TriggerHapticPulse(1000);
+            //player.leftHand.TriggerHapticPulse(1000);
             source.PlayOneShot(offSound);
             animator.SetTrigger("ScaleDown");
             hologramProjector.SetActive(false);
