@@ -19,7 +19,7 @@ public class StringSelectorPropertyDrawer : PropertyDrawer
 
             List<string> stringList = new List<string>();
 
-            if (sp.isArray)
+            if (sp.isArray) //checks if the variable to be converted into the drop down is indeed an array
             {
                 int arrayLength = 0;
 
@@ -71,8 +71,6 @@ public class StringSelectorPropertyDrawer : PropertyDrawer
             }
         }
 
-        EditorGUI.EndProperty();
-        
-       
+        EditorGUI.EndProperty();   
     }
 }
