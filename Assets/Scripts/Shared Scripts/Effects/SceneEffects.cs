@@ -5,12 +5,23 @@ using Valve.VR;
 
 public class SceneEffects : Effect
 {
-    public SteamVR_LoadLevel sceneLoader;
     public string sceneName;
+    SteamVR_LoadLevel sceneLoader;
 
     void Awake()
     {
         methodArray = GetMethodNames((typeof(SceneEffects))).ToArray();
+    }
+
+    public void SetScene()
+    {
+        if (sceneLoader == null)
+            sceneLoader = GameObject.FindObjectOfType<SteamVR_LoadLevel>();
+
+        if (sceneName != "")
+            sceneLoader.levelName = sceneName;
+
+        Debug.Log("Setting Scene");
     }
 
     public void LoadScene()
@@ -18,9 +29,9 @@ public class SceneEffects : Effect
         if (sceneLoader == null)
             sceneLoader = GameObject.FindObjectOfType<SteamVR_LoadLevel>();
 
-        if (sceneName != "")
+        Debug.Log("Scene: " + sceneLoader.levelName);
+        if (sceneLoader.levelName != "")
         {
-            sceneLoader.levelName = sceneName;
             sceneLoader.Trigger();
             transform.root.position = Vector3.zero;
         }

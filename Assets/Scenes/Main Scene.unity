@@ -1428,18 +1428,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 840144742}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &855669019 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1679226236479564669, guid: 09b8309f6c6f5cc44873b58c45a7a69e,
-    type: 3}
-  m_PrefabInstance: {fileID: 1679226235657458278}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a5a6a70209b6e6345bfe18b02314a54e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &879415076
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2247,7 +2235,6 @@ GameObject:
   - component: {fileID: 1559047366}
   - component: {fileID: 1559047365}
   - component: {fileID: 1559047364}
-  - component: {fileID: 1559047363}
   - component: {fileID: 1559047362}
   - component: {fileID: 1559047361}
   - component: {fileID: 1559047360}
@@ -2328,21 +2315,6 @@ MonoBehaviour:
   m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
   m_EffectDistance: {x: 1, y: -1}
   m_UseGraphicAlpha: 1
---- !u!114 &1559047363
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1559047358}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: be062c386fa8d104aa50c49195b11d4f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sceneInterface: {fileID: 8982615152178763128}
-  source: {fileID: 3967692803872236161}
-  buttonSound: {fileID: 8300000, guid: 2acc4f7a6f73f5446b568c4a8381ff8d, type: 3}
 --- !u!65 &1559047364
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2404,7 +2376,6 @@ GameObject:
   - component: {fileID: 1685605615}
   - component: {fileID: 1685605614}
   - component: {fileID: 1685605613}
-  - component: {fileID: 1685605612}
   - component: {fileID: 1685605611}
   - component: {fileID: 1685605610}
   - component: {fileID: 1685605609}
@@ -2485,21 +2456,6 @@ MonoBehaviour:
   m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
   m_EffectDistance: {x: 1, y: -1}
   m_UseGraphicAlpha: 1
---- !u!114 &1685605612
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1685605607}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: be062c386fa8d104aa50c49195b11d4f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sceneInterface: {fileID: 8982615152178763128}
-  source: {fileID: 3967692803872236161}
-  buttonSound: {fileID: 8300000, guid: 2acc4f7a6f73f5446b568c4a8381ff8d, type: 3}
 --- !u!65 &1685605613
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2561,7 +2517,6 @@ GameObject:
   - component: {fileID: 1699125839}
   - component: {fileID: 1699125838}
   - component: {fileID: 1699125837}
-  - component: {fileID: 1699125836}
   - component: {fileID: 1699125835}
   - component: {fileID: 1699125834}
   - component: {fileID: 1699125833}
@@ -2642,21 +2597,6 @@ MonoBehaviour:
   m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
   m_EffectDistance: {x: 1, y: -1}
   m_UseGraphicAlpha: 1
---- !u!114 &1699125836
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1699125831}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: be062c386fa8d104aa50c49195b11d4f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sceneInterface: {fileID: 8982615152178763128}
-  source: {fileID: 3967692803872236161}
-  buttonSound: {fileID: 8300000, guid: 2acc4f7a6f73f5446b568c4a8381ff8d, type: 3}
 --- !u!65 &1699125837
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3024,8 +2964,14 @@ GameObject:
   - component: {fileID: 1805597224}
   - component: {fileID: 1805597223}
   - component: {fileID: 1805597222}
-  - component: {fileID: 1805597221}
   - component: {fileID: 1805597220}
+  - component: {fileID: 1805597231}
+  - component: {fileID: 1805597230}
+  - component: {fileID: 1805597229}
+  - component: {fileID: 1805597228}
+  - component: {fileID: 1805597227}
+  - component: {fileID: 1805597225}
+  - component: {fileID: 1805597221}
   m_Layer: 0
   m_Name: Veteran's Museum
   m_TagString: Untagged
@@ -3082,19 +3028,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1805597218}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 02cf30b7d64b21b40bd818cd8aeb4884, type: 3}
+  m_Script: {fileID: 11500000, guid: 996b5a71d22948840b7f9784fce380ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  holoClick:
-    m_PersistentCalls:
-      m_Calls: []
-  sceneInterface: {fileID: 8982615152178763128}
-  logo: {fileID: 21300000, guid: cff48a2227615694f9f91dff0b40a1fd, type: 3}
-  description: The War Veteran area is under construction. Tell us what you think
-    so far!
+  methodArray:
+  - SetScene
+  - LoadScene
+  chosenMethod: SetScene
   sceneName: Veterans
-  source: {fileID: 3967692803872236161}
-  buttonSound: {fileID: 8300000, guid: 2acc4f7a6f73f5446b568c4a8381ff8d, type: 3}
 --- !u!65 &1805597222
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3144,6 +3085,120 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1805597218}
   m_CullTransparentMesh: 0
+--- !u!114 &1805597225
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1805597218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b1b3f8933d34724aa2634c234ddcbe7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  methodArray:
+  - SetImage
+  chosenMethod: SetImage
+  image: {fileID: 8982615152568399664}
+  sprite: {fileID: 21300000, guid: cff48a2227615694f9f91dff0b40a1fd, type: 3}
+--- !u!114 &1805597227
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1805597218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf097bbf726d8f4408ee25b075709e85, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  methodArray:
+  - SetText
+  chosenMethod: SetText
+  textbox: {fileID: 8982615152524831010}
+  text: The War Veteran area is under construction. Tell us what you think so far!
+--- !u!114 &1805597228
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1805597218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46f4afd2ebaeb784b8033e6c5f71347d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  methodArray:
+  - SetTrigger
+  - SetBool
+  - SetInterger
+  - SetFloat
+  chosenMethod: SetTrigger
+  animator: {fileID: 1805597220}
+  animationName: Pressed
+  animationBool: 0
+  animationInt: 0
+  animationFloat: 0
+--- !u!114 &1805597229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1805597218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5854908edd62f584488675576c07b697, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  methodArray:
+  - PerformHaptic
+  chosenMethod: PerformHaptic
+  handedness: 1
+  duration: 0.25
+  frequency: 1
+  amplitude: 1
+--- !u!114 &1805597230
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1805597218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96be6764ed9f5fa488eb608107b4d411, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  methodArray:
+  - PlayClip
+  chosenMethod: PlayClip
+  source: {fileID: 3967692803872236161}
+  clip: {fileID: 8300000, guid: 2acc4f7a6f73f5446b568c4a8381ff8d, type: 3}
+--- !u!114 &1805597231
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1805597218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa6a4fe62501d2c40baa25020c2be61a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activateEffects:
+  - {fileID: 1805597230}
+  - {fileID: 1805597229}
+  - {fileID: 1805597228}
+  - {fileID: 1805597227}
+  - {fileID: 1805597221}
+  - {fileID: 1805597225}
+  triggerTags:
+  - Finger
 --- !u!1 &946229743463930710
 GameObject:
   m_ObjectHideFlags: 0
@@ -7254,7 +7309,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7404566638117482471}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f9b7c85a4b1178e4cb62391f269e81b6, type: 3}
   m_Name: 
@@ -7278,6 +7333,13 @@ GameObject:
   - component: {fileID: 7404566638117482468}
   - component: {fileID: 7404566638117482469}
   - component: {fileID: 3967692803872236161}
+  - component: {fileID: 7404566638117482478}
+  - component: {fileID: 7404566638117482477}
+  - component: {fileID: 7404566638117482476}
+  - component: {fileID: 7404566638117482475}
+  - component: {fileID: 7404566638117482474}
+  - component: {fileID: 7404566638117482473}
+  - component: {fileID: 7404566638117482472}
   m_Layer: 9
   m_Name: Holo Center
   m_TagString: Untagged
@@ -7285,6 +7347,143 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &7404566638117482472
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7404566638117482471}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46f4afd2ebaeb784b8033e6c5f71347d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  methodArray:
+  - SetTrigger
+  - SetBool
+  - SetInterger
+  - SetFloat
+  chosenMethod: SetTrigger
+  animator: {fileID: 8982615152743686215}
+  animationName: ScaleDown
+  animationBool: 0
+  animationInt: 0
+  animationFloat: 0
+--- !u!114 &7404566638117482473
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7404566638117482471}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96be6764ed9f5fa488eb608107b4d411, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  methodArray:
+  - PlayClip
+  chosenMethod: PlayClip
+  source: {fileID: 3967692803872236161}
+  clip: {fileID: 8300000, guid: 6bc000a72bb11fb4fba680c87a8cb60c, type: 3}
+--- !u!114 &7404566638117482474
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7404566638117482471}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed64b9a9b3508094491c932c9cd9a770, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  methodArray:
+  - ActivateObject
+  - DeactivateObject
+  chosenMethod: DeactivateObject
+  targetObjects:
+  - {fileID: 8982615152743686221}
+  - {fileID: 8982615152806928513}
+--- !u!114 &7404566638117482475
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7404566638117482471}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46f4afd2ebaeb784b8033e6c5f71347d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  methodArray:
+  - SetTrigger
+  - SetBool
+  - SetInterger
+  - SetFloat
+  chosenMethod: SetTrigger
+  animator: {fileID: 8982615152743686215}
+  animationName: ScaleUp
+  animationBool: 0
+  animationInt: 0
+  animationFloat: 0
+--- !u!114 &7404566638117482476
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7404566638117482471}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5854908edd62f584488675576c07b697, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  methodArray:
+  - PerformHaptic
+  chosenMethod: PerformHaptic
+  handedness: 0
+  duration: 1
+  frequency: 1
+  amplitude: 1
+--- !u!114 &7404566638117482477
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7404566638117482471}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96be6764ed9f5fa488eb608107b4d411, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  methodArray:
+  - PlayClip
+  chosenMethod: PlayClip
+  source: {fileID: 3967692803872236161}
+  clip: {fileID: 8300000, guid: 3a6d84de4a3261f4eace1b54966f6609, type: 3}
+--- !u!114 &7404566638117482478
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7404566638117482471}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed64b9a9b3508094491c932c9cd9a770, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  methodArray:
+  - ActivateObject
+  - DeactivateObject
+  chosenMethod: ActivateObject
+  targetObjects:
+  - {fileID: 8982615152743686221}
+  - {fileID: 8982615152806928513}
 --- !u!23 &7648532347560554615
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -7575,8 +7774,14 @@ GameObject:
   - component: {fileID: 8982615152092943345}
   - component: {fileID: 5723262540320150573}
   - component: {fileID: 8982615152092943351}
-  - component: {fileID: 8982615152092943350}
   - component: {fileID: 5723262540320150574}
+  - component: {fileID: 8982615152092943356}
+  - component: {fileID: 8982615152092943355}
+  - component: {fileID: 8982615152092943354}
+  - component: {fileID: 8982615152092943353}
+  - component: {fileID: 8982615152092943352}
+  - component: {fileID: 8982615152092943348}
+  - component: {fileID: 8982615152092943349}
   m_Layer: 0
   m_Name: Oneida
   m_TagString: Untagged
@@ -7605,7 +7810,7 @@ RectTransform:
   m_AnchoredPosition: {x: 0.4558, y: -0.5818875}
   m_SizeDelta: {x: 1, y: 0.232755}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &8982615152092943350
+--- !u!114 &8982615152092943348
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -7614,19 +7819,31 @@ MonoBehaviour:
   m_GameObject: {fileID: 8982615152092943346}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 02cf30b7d64b21b40bd818cd8aeb4884, type: 3}
+  m_Script: {fileID: 11500000, guid: 5b1b3f8933d34724aa2634c234ddcbe7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  holoClick:
-    m_PersistentCalls:
-      m_Calls: []
-  sceneInterface: {fileID: 8982615152178763128}
-  logo: {fileID: 21300000, guid: 3f0611ccc2fe00248be92c3a2f4bcd49, type: 3}
-  description: 'The Oneida Nation of Wisconsin are descendants of an indigenous Iroquoian-speaking
-    nation that arose in present-day central-western New York. '
+  methodArray:
+  - SetImage
+  chosenMethod: SetImage
+  image: {fileID: 8982615152568399664}
+  sprite: {fileID: 21300000, guid: 3f0611ccc2fe00248be92c3a2f4bcd49, type: 3}
+--- !u!114 &8982615152092943349
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8982615152092943346}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 996b5a71d22948840b7f9784fce380ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  methodArray:
+  - SetScene
+  - LoadScene
+  chosenMethod: SetScene
   sceneName: Oneida
-  source: {fileID: 3967692803872236161}
-  buttonSound: {fileID: 8300000, guid: 2acc4f7a6f73f5446b568c4a8381ff8d, type: 3}
 --- !u!65 &8982615152092943351
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7640,6 +7857,104 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.8148316, y: 0.66, z: 8.88}
   m_Center: {x: 0.0015959456, y: -0.006548221, z: 0.0000008237543}
+--- !u!114 &8982615152092943352
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8982615152092943346}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf097bbf726d8f4408ee25b075709e85, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  methodArray:
+  - SetText
+  chosenMethod: SetText
+  textbox: {fileID: 8982615152524831010}
+  text: 'The Oneida Nation of Wisconsin are descendants of an indigenous Iroquoian-speaking
+    nation that arose in present-day central-western New York. '
+--- !u!114 &8982615152092943353
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8982615152092943346}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46f4afd2ebaeb784b8033e6c5f71347d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  methodArray:
+  - SetTrigger
+  - SetBool
+  - SetInterger
+  - SetFloat
+  chosenMethod: SetTrigger
+  animator: {fileID: 5723262540320150574}
+  animationName: Pressed
+  animationBool: 0
+  animationInt: 0
+  animationFloat: 0
+--- !u!114 &8982615152092943354
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8982615152092943346}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5854908edd62f584488675576c07b697, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  methodArray:
+  - PerformHaptic
+  chosenMethod: PerformHaptic
+  handedness: 1
+  duration: 0.25
+  frequency: 1
+  amplitude: 1
+--- !u!114 &8982615152092943355
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8982615152092943346}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96be6764ed9f5fa488eb608107b4d411, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  methodArray:
+  - PlayClip
+  chosenMethod: PlayClip
+  source: {fileID: 3967692803872236161}
+  clip: {fileID: 8300000, guid: 2acc4f7a6f73f5446b568c4a8381ff8d, type: 3}
+--- !u!114 &8982615152092943356
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8982615152092943346}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa6a4fe62501d2c40baa25020c2be61a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activateEffects:
+  - {fileID: 8982615152092943355}
+  - {fileID: 8982615152092943354}
+  - {fileID: 8982615152092943353}
+  - {fileID: 8982615152092943352}
+  - {fileID: 8982615152092943349}
+  - {fileID: 8982615152092943348}
+  triggerTags:
+  - Finger
 --- !u!1 &8982615152178763012
 GameObject:
   m_ObjectHideFlags: 0
@@ -7651,7 +7966,6 @@ GameObject:
   - component: {fileID: 8982615152178763013}
   - component: {fileID: 8982615152178763131}
   - component: {fileID: 8982615152178763130}
-  - component: {fileID: 8982615152178763128}
   m_Layer: 0
   m_Name: Right Side
   m_TagString: Untagged
@@ -7681,21 +7995,6 @@ RectTransform:
   m_AnchoredPosition: {x: -0.075, y: -0}
   m_SizeDelta: {x: 0.9036, y: 0.931}
   m_Pivot: {x: 1, y: 0.5}
---- !u!114 &8982615152178763128
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8982615152178763012}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0f8c5bc98de5f3e40a147b085299f45d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  logoImage: {fileID: 8982615152568399664}
-  descriptionText: {fileID: 8982615152524831010}
-  sceneLoader: {fileID: 855669019}
 --- !u!114 &8982615152178763130
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7744,8 +8043,14 @@ GameObject:
   - component: {fileID: 8982615152484204647}
   - component: {fileID: 5723262542019472441}
   - component: {fileID: 8982615152484204645}
-  - component: {fileID: 8982615152484204644}
   - component: {fileID: 5723262542019472442}
+  - component: {fileID: 8982615152484204651}
+  - component: {fileID: 8982615152484204650}
+  - component: {fileID: 8982615152484204649}
+  - component: {fileID: 8982615152484204648}
+  - component: {fileID: 8982615152484204646}
+  - component: {fileID: 8982615152484204642}
+  - component: {fileID: 8982615152484204643}
   m_Layer: 0
   m_Name: TrueSkool
   m_TagString: Untagged
@@ -7774,7 +8079,7 @@ RectTransform:
   m_AnchoredPosition: {x: 0.4558, y: -0.3491325}
   m_SizeDelta: {x: 1, y: 0.232755}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &8982615152484204644
+--- !u!114 &8982615152484204642
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -7783,19 +8088,31 @@ MonoBehaviour:
   m_GameObject: {fileID: 8982615152484204640}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 02cf30b7d64b21b40bd818cd8aeb4884, type: 3}
+  m_Script: {fileID: 11500000, guid: 5b1b3f8933d34724aa2634c234ddcbe7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  holoClick:
-    m_PersistentCalls:
-      m_Calls: []
-  sceneInterface: {fileID: 8982615152178763128}
-  logo: {fileID: 21300000, guid: 926e5ae3311f0bf4095532c1eca96f54, type: 3}
-  description: TRUE Skool's mission is to ENGAGE , EDUCATE & EMPOWER youth and communities
-    through the Creative Arts and Hip Hop Culture!
+  methodArray:
+  - SetImage
+  chosenMethod: SetImage
+  image: {fileID: 8982615152568399664}
+  sprite: {fileID: 21300000, guid: 926e5ae3311f0bf4095532c1eca96f54, type: 3}
+--- !u!114 &8982615152484204643
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8982615152484204640}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 996b5a71d22948840b7f9784fce380ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  methodArray:
+  - SetScene
+  - LoadScene
+  chosenMethod: SetScene
   sceneName: True Skool
-  source: {fileID: 3967692803872236161}
-  buttonSound: {fileID: 8300000, guid: 2acc4f7a6f73f5446b568c4a8381ff8d, type: 3}
 --- !u!65 &8982615152484204645
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7809,6 +8126,24 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.8148316, y: 0.66, z: 8.88}
   m_Center: {x: 0.0015959456, y: -0.006548221, z: 0.0000008237543}
+--- !u!114 &8982615152484204646
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8982615152484204640}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf097bbf726d8f4408ee25b075709e85, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  methodArray:
+  - SetText
+  chosenMethod: SetText
+  textbox: {fileID: 8982615152524831010}
+  text: TRUE Skool's mission is to ENGAGE , EDUCATE & EMPOWER youth and communities
+    through the Creative Arts and Hip Hop Culture!
 --- !u!222 &8982615152484204647
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7817,6 +8152,86 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8982615152484204640}
   m_CullTransparentMesh: 0
+--- !u!114 &8982615152484204648
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8982615152484204640}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46f4afd2ebaeb784b8033e6c5f71347d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  methodArray:
+  - SetTrigger
+  - SetBool
+  - SetInterger
+  - SetFloat
+  chosenMethod: SetTrigger
+  animator: {fileID: 5723262542019472442}
+  animationName: Pressed
+  animationBool: 0
+  animationInt: 0
+  animationFloat: 0
+--- !u!114 &8982615152484204649
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8982615152484204640}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5854908edd62f584488675576c07b697, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  methodArray:
+  - PerformHaptic
+  chosenMethod: PerformHaptic
+  handedness: 1
+  duration: 0.25
+  frequency: 1
+  amplitude: 1
+--- !u!114 &8982615152484204650
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8982615152484204640}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96be6764ed9f5fa488eb608107b4d411, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  methodArray:
+  - PlayClip
+  chosenMethod: PlayClip
+  source: {fileID: 3967692803872236161}
+  clip: {fileID: 8300000, guid: 2acc4f7a6f73f5446b568c4a8381ff8d, type: 3}
+--- !u!114 &8982615152484204651
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8982615152484204640}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa6a4fe62501d2c40baa25020c2be61a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activateEffects:
+  - {fileID: 8982615152484204650}
+  - {fileID: 8982615152484204649}
+  - {fileID: 8982615152484204648}
+  - {fileID: 8982615152484204646}
+  - {fileID: 8982615152484204643}
+  - {fileID: 8982615152484204642}
+  triggerTags:
+  - Finger
 --- !u!114 &8982615152524831010
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8062,6 +8477,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6c46718c884eff4cbf2448689ac1c99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  activateEffects:
+  - {fileID: 7404566638117482478}
+  - {fileID: 7404566638117482477}
+  - {fileID: 7404566638117482476}
+  - {fileID: 7404566638117482475}
+  deactivateEffects:
+  - {fileID: 7404566638117482474}
+  - {fileID: 7404566638117482473}
+  - {fileID: 7404566638117482476}
+  - {fileID: 7404566638117482472}
   gazeRadius: 0.01
   interactionLayer:
     serializedVersion: 2
@@ -8472,10 +8897,13 @@ GameObject:
   - component: {fileID: 8982615153294752209}
   - component: {fileID: 8982615153294752208}
   - component: {fileID: 8982615153294752213}
-  - component: {fileID: 8982615153294752212}
   - component: {fileID: 8982615153294752215}
   - component: {fileID: 8982615153294752214}
   - component: {fileID: 3277201432242189457}
+  - component: {fileID: 8982615153294752219}
+  - component: {fileID: 8982615153294752218}
+  - component: {fileID: 8982615153294752217}
+  - component: {fileID: 8982615153294752216}
   m_Layer: 0
   m_Name: Teleport Button
   m_TagString: Untagged
@@ -8504,21 +8932,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0.05}
   m_SizeDelta: {x: 0.8, y: 0.075}
   m_Pivot: {x: 0.5, y: 0}
---- !u!114 &8982615153294752212
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8982615153294752210}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: be062c386fa8d104aa50c49195b11d4f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sceneInterface: {fileID: 8982615152178763128}
-  source: {fileID: 3967692803872236161}
-  buttonSound: {fileID: 8300000, guid: 2acc4f7a6f73f5446b568c4a8381ff8d, type: 3}
 --- !u!65 &8982615153294752213
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8562,6 +8975,81 @@ MonoBehaviour:
   m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
   m_EffectDistance: {x: 1, y: -1}
   m_UseGraphicAlpha: 1
+--- !u!114 &8982615153294752216
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8982615153294752210}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 996b5a71d22948840b7f9784fce380ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  methodArray:
+  - SetScene
+  - LoadScene
+  chosenMethod: LoadScene
+  sceneName: 
+--- !u!114 &8982615153294752217
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8982615153294752210}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46f4afd2ebaeb784b8033e6c5f71347d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  methodArray:
+  - SetTrigger
+  - SetBool
+  - SetInterger
+  - SetFloat
+  chosenMethod: SetTrigger
+  animator: {fileID: 3277201432242189457}
+  animationName: Pressed
+  animationBool: 0
+  animationInt: 0
+  animationFloat: 0
+--- !u!114 &8982615153294752218
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8982615153294752210}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96be6764ed9f5fa488eb608107b4d411, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  methodArray:
+  - PlayClip
+  chosenMethod: PlayClip
+  source: {fileID: 3967692803872236161}
+  clip: {fileID: 8300000, guid: 2acc4f7a6f73f5446b568c4a8381ff8d, type: 3}
+--- !u!114 &8982615153294752219
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8982615153294752210}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa6a4fe62501d2c40baa25020c2be61a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activateEffects:
+  - {fileID: 8982615153294752218}
+  - {fileID: 8982615153294752217}
+  - {fileID: 8982615153294752216}
+  triggerTags:
+  - Finger
 --- !u!65 &8982615153620074210
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8587,8 +9075,14 @@ GameObject:
   - component: {fileID: 8982615153620074220}
   - component: {fileID: 5723262541419743465}
   - component: {fileID: 8982615153620074210}
-  - component: {fileID: 8982615153620074221}
   - component: {fileID: 5723262541419743466}
+  - component: {fileID: 8982615153620074227}
+  - component: {fileID: 8982615153620074226}
+  - component: {fileID: 8982615153620074225}
+  - component: {fileID: 8982615153620074224}
+  - component: {fileID: 8982615153620074223}
+  - component: {fileID: 8982615153620074218}
+  - component: {fileID: 8982615153620074219}
   m_Layer: 0
   m_Name: Islands of Brilliance
   m_TagString: Untagged
@@ -8596,15 +9090,7 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!222 &8982615153620074220
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8982615153620074217}
-  m_CullTransparentMesh: 0
---- !u!114 &8982615153620074221
+--- !u!114 &8982615153620074218
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8613,19 +9099,39 @@ MonoBehaviour:
   m_GameObject: {fileID: 8982615153620074217}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 02cf30b7d64b21b40bd818cd8aeb4884, type: 3}
+  m_Script: {fileID: 11500000, guid: 5b1b3f8933d34724aa2634c234ddcbe7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  holoClick:
-    m_PersistentCalls:
-      m_Calls: []
-  sceneInterface: {fileID: 8982615152178763128}
-  logo: {fileID: 21300000, guid: aa61ab87ebb61c741af789ff30e9d9e1, type: 3}
-  description: Islands of Brilliance (IOB) is a learning experience developed specifically
-    for children and young adults on the autism spectrum.
+  methodArray:
+  - SetImage
+  chosenMethod: SetImage
+  image: {fileID: 8982615152568399664}
+  sprite: {fileID: 21300000, guid: aa61ab87ebb61c741af789ff30e9d9e1, type: 3}
+--- !u!114 &8982615153620074219
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8982615153620074217}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 996b5a71d22948840b7f9784fce380ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  methodArray:
+  - SetScene
+  - LoadScene
+  chosenMethod: SetScene
   sceneName: Island of Brilliance
-  source: {fileID: 3967692803872236161}
-  buttonSound: {fileID: 8300000, guid: 2acc4f7a6f73f5446b568c4a8381ff8d, type: 3}
+--- !u!222 &8982615153620074220
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8982615153620074217}
+  m_CullTransparentMesh: 0
 --- !u!224 &8982615153620074222
 RectTransform:
   m_ObjectHideFlags: 0
@@ -8647,3 +9153,101 @@ RectTransform:
   m_AnchoredPosition: {x: 0.4558, y: -0.1163775}
   m_SizeDelta: {x: 1, y: 0.232755}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &8982615153620074223
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8982615153620074217}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf097bbf726d8f4408ee25b075709e85, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  methodArray:
+  - SetText
+  chosenMethod: SetText
+  textbox: {fileID: 8982615152524831010}
+  text: Islands of Brilliance (IOB) is a learning experience developed specifically
+    for children and young adults on the autism spectrum.
+--- !u!114 &8982615153620074224
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8982615153620074217}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46f4afd2ebaeb784b8033e6c5f71347d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  methodArray:
+  - SetTrigger
+  - SetBool
+  - SetInterger
+  - SetFloat
+  chosenMethod: SetTrigger
+  animator: {fileID: 5723262541419743466}
+  animationName: Pressed
+  animationBool: 0
+  animationInt: 0
+  animationFloat: 0
+--- !u!114 &8982615153620074225
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8982615153620074217}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5854908edd62f584488675576c07b697, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  methodArray:
+  - PerformHaptic
+  chosenMethod: PerformHaptic
+  handedness: 1
+  duration: 0.25
+  frequency: 1
+  amplitude: 1
+--- !u!114 &8982615153620074226
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8982615153620074217}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96be6764ed9f5fa488eb608107b4d411, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  methodArray:
+  - PlayClip
+  chosenMethod: PlayClip
+  source: {fileID: 3967692803872236161}
+  clip: {fileID: 8300000, guid: 2acc4f7a6f73f5446b568c4a8381ff8d, type: 3}
+--- !u!114 &8982615153620074227
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8982615153620074217}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa6a4fe62501d2c40baa25020c2be61a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activateEffects:
+  - {fileID: 8982615153620074226}
+  - {fileID: 8982615153620074225}
+  - {fileID: 8982615153620074224}
+  - {fileID: 8982615153620074223}
+  - {fileID: 8982615153620074219}
+  - {fileID: 8982615153620074218}
+  triggerTags:
+  - Finger

@@ -6,6 +6,7 @@ using TMPro;
 public class TextEffects : Effect
 {
     public TextMeshProUGUI textbox;
+    [TextArea]
     public string text;
 
     void Awake()

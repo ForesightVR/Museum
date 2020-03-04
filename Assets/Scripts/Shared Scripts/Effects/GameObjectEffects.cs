@@ -4,21 +4,23 @@ using UnityEngine;
 
 public class GameObjectEffects : Effect
 {
-    public GameObject targetObject;
+    public GameObject[] targetObjects;
 
     void Awake()
     {
-        methodArray = GetMethodNames((typeof(TextEffects))).ToArray();
+        methodArray = GetMethodNames((typeof(GameObjectEffects))).ToArray();
     }
 
     public void ActivateObject()
     {
-        targetObject.SetActive(true);
+        foreach(GameObject go in targetObjects)
+            go.SetActive(true);
     }
 
     public void DeactivateObject()
     {
-        targetObject.SetActive(false);
+        foreach (GameObject go in targetObjects)
+            go.SetActive(false);
     }
 
 }

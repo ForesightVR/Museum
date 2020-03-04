@@ -11,14 +11,6 @@ public class TriggerEnterCause : Cause
     private void OnTriggerEnter(Collider other) // -> cause
     {
         if (triggerTags.Contains(other.tag)) // -> Enum Check
-        {
             ActivateEffects();
-
-            //source.PlayOneShot(buttonSound); // -> in the inspector
-            //animator.SetTrigger("Pressed");
-            //player.rightHand.TriggerHapticPulse(500);
-
-            //sceneInterface.SetInfo(logo, description, sceneName); // -> also in the inspector
-        }
     }
 }
