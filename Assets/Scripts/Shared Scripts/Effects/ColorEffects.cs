@@ -5,21 +5,19 @@ using UnityEngine.UI;
 
 public class ColorEffects : Effect
 {
-    [DisplayIfStringMatch("chosenMethod", "ChangeColor")]
-    public Color color;
-    [DisplayIfStringMatch("chosenMethod", "ChangeColor")]
     public GameObject affectedObject;
-
-    void Awake()
-    {
-        methodArray = GetMethodNames((typeof(ColorEffects))).ToArray();
-    }
+    
+    [ValueMatchDisplay("chosenMethod", new string[] { "ChangeColor", "RepeatColor"})]
+    public Color color;  
 
     public void ChangeColor()
     {
         affectedObject.GetComponent<MeshRenderer>().material.color = color;
         Debug.Log("Color changed");
     }
+
+    public void RepeatColor()
+    { }
 
     public void ColorBlack()
     {

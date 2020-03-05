@@ -13,9 +13,9 @@ public class HapticEffects : Effect
     Player player;
     List<Hand> hands = new List<Hand>();
 
-    void Awake()
+    protected override void Awake()
     {
-        methodArray = GetMethodNames((typeof(HapticEffects))).ToArray();
+        base.Awake();
         player = Player.instance;
         hands = HapticUtilities.GetHands(player, handedness);
     }

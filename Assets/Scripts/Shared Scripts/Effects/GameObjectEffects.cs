@@ -5,12 +5,6 @@ using UnityEngine;
 public class GameObjectEffects : Effect
 {
     public GameObject[] targetObjects;
-
-    void Awake()
-    {
-        methodArray = GetMethodNames((typeof(GameObjectEffects))).ToArray();
-    }
-
     public void ActivateObject()
     {
         foreach(GameObject go in targetObjects)

@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 using UnityEngine;
+
 [ExecuteInEditMode]
 public class Effect : MonoBehaviour
 {
@@ -12,6 +13,16 @@ public class Effect : MonoBehaviour
 
     [StringSelector("methodArray")]
     public string chosenMethod;
+
+    protected virtual void Awake()
+    {
+        //methodArray = GetMethodNames(this.GetType()).ToArray();
+    }
+
+    private void Update()
+    {
+        methodArray = GetMethodNames(this.GetType()).ToArray();
+    }
 
     public List<string> GetMethodNames(Type myType)
     {

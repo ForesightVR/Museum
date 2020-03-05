@@ -9,11 +9,6 @@ public class TextEffects : Effect
     [TextArea]
     public string text;
 
-    void Awake()
-    {
-        methodArray = GetMethodNames((typeof(TextEffects))).ToArray();
-    }
-
     public void SetText()
     {
         textbox.text = text;

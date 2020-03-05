@@ -8,11 +8,6 @@ public class SceneEffects : Effect
     public string sceneName;
     SteamVR_LoadLevel sceneLoader;
 
-    void Awake()
-    {
-        methodArray = GetMethodNames((typeof(SceneEffects))).ToArray();
-    }
-
     public void SetScene()
     {
         if (sceneLoader == null)

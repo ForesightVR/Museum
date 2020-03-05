@@ -21,14 +21,11 @@ public class StringSelectorPropertyDrawer : PropertyDrawer
 
             if (sp.isArray) //checks if the variable to be converted into the drop down is indeed an array
             {
-                int arrayLength = 0;
-
                 sp.Next(true); // skip generic field
                 sp.Next(true); // advance to array size field
 
                 // Get the array size
-                arrayLength = sp.intValue;
-
+                int arrayLength = sp.intValue;
                 sp.Next(true); // advance to first array index
 
                 int lastIndex = arrayLength - 1;
@@ -37,38 +34,16 @@ public class StringSelectorPropertyDrawer : PropertyDrawer
                     stringList.Add(sp.stringValue); // copy the value to the list
                     if (i < lastIndex) sp.Next(false); // advance without drilling into children
                 }
-            }            
-
-            string propertyString = property.stringValue;
-            int index = -1;
-           
-            //check if there is an entry that matches the entry and get the index
-            for (int i = 0; i < stringList.Count; i++)
-            {
-                if (stringList[i] == propertyString)
-                {
-                    index = i;
-                    break;
-                }
             }
-            
+
+            //check if there is an entry that matches the entry and get the index
+            int index = stringList.IndexOf(property.stringValue);
 
             //Draw the popup box with the current selected index
             index = EditorGUI.Popup(position, label.text, index, stringList.ToArray());
 
-            //Adjust the actual string value of the property based on the selection
-            if (index == 0)
-            {
-                property.stringValue = stringList[index];
-            }
-            else if (index >= 1)
-            {
-                property.stringValue = stringList[index];
-            }
-            else
-            {
-                property.stringValue = "";
-            }
+            //if nothing is selected, defaults them to the first option
+            property.stringValue = (index == -1) ? stringList[0] : stringList[index];
         }
 
         EditorGUI.EndProperty();   

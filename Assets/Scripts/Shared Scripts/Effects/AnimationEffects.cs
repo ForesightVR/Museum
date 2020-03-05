@@ -7,19 +7,14 @@ public class AnimationEffects : Effect
     public Animator animator;
     public string animationName;
 
-    [DisplayIfStringMatch("chosenMethod", "SetBool")]
+    [ValueMatchDisplay("chosenMethod", "SetBool")]
     public bool animationBool;
 
-    [DisplayIfStringMatch("chosenMethod", "SetInterger")]
+    [ValueMatchDisplay("chosenMethod", "SetInterger")]
     public int animationInt;
 
-    [DisplayIfStringMatch("chosenMethod", "SetFloat")]
+    [ValueMatchDisplay("chosenMethod", "SetFloat")]
     public float animationFloat;
-
-    void Awake()
-    {
-        methodArray = GetMethodNames((typeof(AnimationEffects))).ToArray();
-    }
 
     public void SetTrigger()
     {
