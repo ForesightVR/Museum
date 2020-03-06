@@ -15883,7 +15883,12 @@ PrefabInstance:
     - target: {fileID: 2428080445846849485, guid: 60c29afee8c4a2e4a8219cb8a3a58af4,
         type: 3}
       propertyPath: m_BendingStiffness
-      value: 0.78
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2428080445846849485, guid: 60c29afee8c4a2e4a8219cb8a3a58af4,
+        type: 3}
+      propertyPath: m_RandomAcceleration.z
+      value: -2
       objectReference: {fileID: 0}
     - target: {fileID: 5950287941685560678, guid: 60c29afee8c4a2e4a8219cb8a3a58af4,
         type: 3}
@@ -81156,6 +81161,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2428080445846849485, guid: 60c29afee8c4a2e4a8219cb8a3a58af4,
+        type: 3}
+      propertyPath: m_BendingStiffness
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2428080445846849485, guid: 60c29afee8c4a2e4a8219cb8a3a58af4,
+        type: 3}
+      propertyPath: m_Damping
+      value: 0.08
+      objectReference: {fileID: 0}
     - target: {fileID: 5950287941685560678, guid: 60c29afee8c4a2e4a8219cb8a3a58af4,
         type: 3}
       propertyPath: m_Name
