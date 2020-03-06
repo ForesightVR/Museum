@@ -5,7 +5,7 @@
       "app_key": "application.generated.unity.museum.exe",
       "launch_type": "url",
       "url": "steam://launch/",
-      "action_manifest_path": "C:\\Users\\Jeff Fleetwood\\Documents\\GitHub\\Museum\\Assets\\StreamingAssets\\SteamVR\\actions.json",
+      "action_manifest_path": "C:\\Users\\hecto\\Documents\\GitHub\\Museum\\Assets\\StreamingAssets\\SteamVR\\actions.json",
       "strings": {
         "en_us": {
           "name": "Museum [Testing]"

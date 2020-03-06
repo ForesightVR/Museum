@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: e59faab3e1f4ea54bb80fa968afdab5d
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Datalegreya
+  fontNames:
+  - Datalegreya
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 216d9280d81b8e74499783f5ae9167e2, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

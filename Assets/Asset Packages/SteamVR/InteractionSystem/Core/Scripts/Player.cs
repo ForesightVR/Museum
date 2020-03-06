@@ -41,6 +41,7 @@ namespace Valve.VR.InteractionSystem
         public SteamVR_Action_Boolean headsetOnHead = SteamVR_Input.GetBooleanAction("HeadsetOnHead");
 
 		public bool allowToggleTo2D = true;
+        public GameObject splashScreen;
 
 
 		//-------------------------------------------------
@@ -256,6 +257,9 @@ namespace Valve.VR.InteractionSystem
 			{
 				trackingOriginTransform = this.transform;
 			}
+
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
 		}
 
 
@@ -274,6 +278,7 @@ namespace Valve.VR.InteractionSystem
 			else
 			{
 #if !HIDE_DEBUG_UI
+                if(rig2DFallback)
 				ActivateRig( rig2DFallback );
 #endif
 			}
@@ -289,10 +294,12 @@ namespace Valve.VR.InteractionSystem
                 if (headsetOnHead.GetStateDown(SteamVR_Input_Sources.Head))
                 {
                     Debug.Log("<b>SteamVR Interaction System</b> Headset placed on head");
+                    splashScreen.SetActive(false);
                 }
                 else if (headsetOnHead.GetStateUp(SteamVR_Input_Sources.Head))
                 {
                     Debug.Log("<b>SteamVR Interaction System</b> Headset removed");
+                    splashScreen.SetActive(true);
                 }
             }
         }
