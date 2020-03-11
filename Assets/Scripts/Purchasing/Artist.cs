@@ -2,11 +2,19 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Artist : MonoBehaviour
+public class Artist
 {
-    public new string name;
+    public int vendorId;
+    public string name;
     public string description;
-    public int vendorID;
     public List<Art> artPieces;
     public Sprite artistImage;
+
+    public Artist(int vendorId, string name, string description)
+    {
+        this.vendorId = vendorId;
+        this.name = name;
+        this.description = description;
+    }
+
 }
