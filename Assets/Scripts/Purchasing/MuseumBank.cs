@@ -47,8 +47,13 @@ public static class MuseumBank
         foreach (JObject jObject in jArray)
         {
             JObject data = JObject.Parse(jObject.ToString());
+            Artist artist = new Artist((int)data["id"], $"{data["first_name"]} {data["last_name"]}", (string)data["shop"]["description"]);
 
-            artists.Add(new Artist((int)data["id"], $"{data["first_name"]} {data["last_name"]}", (string)data["shop"]["description"]));
+            string artistImageString = GetImageLink(data);
+            Debug.Log("Image String: " + artistImageString);
+            CoroutineUtility.instance.StartCoroutine(GetImage(artist, artistImageString));
+
+            artists.Add(artist);
         }
 
         CoroutineUtility.instance.StartCoroutine(GetAllProductsByVendor());
@@ -142,6 +147,36 @@ public static class MuseumBank
             Texture2D texture = ((DownloadHandlerTexture)www.downloadHandler).texture;
             artist.artistImage = Sprite.Create(texture, new Rect(0, 0, texture.width, texture.height), Vector2.zero);
         }
+    }
+
+    static string GetImageLink(JObject data)
+    {
+        var description = (string)data["shop"]["description"];
+
+        string searchCharacters = "src=\"";
+
+        var searchCharIndex = description.IndexOf(searchCharacters);
+
+        string imageLink = "";
+
+        if (searchCharIndex > 0)
+        {
+            Debug.Log("Image Found!");
+            imageLink = ParseHTMLAttribute(searchCharIndex + searchCharacters.Length, description);
+        }
+        else
+        {
+            imageLink = "";  //we could have a link to a default image if their description doesn't have an iamge
+            Debug.Log("No Image Found!");
+        }
+
+        return imageLink;
+    }
+    static string ParseHTMLAttribute(int startingIndex, string htmlString)
+    {
+        var endingIndex = htmlString.IndexOf('"', startingIndex);
+
+        return htmlString.Substring(startingIndex, endingIndex - startingIndex);
     }
     static string StripHTML(string input)
     {
