@@ -15,6 +15,7 @@ public class Artist
         this.vendorId = vendorId;
         this.name = name;
         this.description = description;
+        this.artPieces = new List<Art>();
     }
 
 }

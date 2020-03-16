@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Networking;
 using Valve.Newtonsoft.Json.Linq;
+using System.Linq;
+using System.Text.RegularExpressions;
+using System;
 
 public static class MuseumBank
 {
@@ -21,6 +24,8 @@ public static class MuseumBank
 
     static IEnumerator GetAllVendors()
     {
+        Debug.Log("GetAllVendors");
+
         var request = CreateGetRequest(vendorsApiString);
 
         yield return request.SendWebRequest();
@@ -29,6 +34,7 @@ public static class MuseumBank
             throw new System.Exception(request.error);
         else
         {
+            Debug.Log(request.downloadHandler.text);
             JArray jsonArray = JArray.Parse(request.downloadHandler.text);
             CreateArtists(jsonArray);   
         }
@@ -36,7 +42,9 @@ public static class MuseumBank
 
     static void CreateArtists(JArray jArray)
     {
-        foreach(JObject jObject in jArray)
+        Debug.Log("Create Artists");
+
+        foreach (JObject jObject in jArray)
         {
             JObject data = JObject.Parse(jObject.ToString());
 
@@ -48,6 +56,8 @@ public static class MuseumBank
 
     static IEnumerator GetAllProductsByVendor()
     {
+        Debug.Log("GetAllProductsByVendors");
+
         foreach (Artist artist in artists)
         {
             var request = CreateGetRequest(productsApiString, new List<string>() { $"vendor={artist.vendorId}"});
@@ -59,21 +69,32 @@ public static class MuseumBank
             else
             {
                 JArray jsonArray = JArray.Parse(request.downloadHandler.text);
+                CreateArt(jsonArray, artist);
                 //CreateArtists(jsonArray);
             }
         }        
     }
 
-    static void CreateArt(JArray jArray)
+    static void CreateArt(JArray jArray, Artist artist)
     {
         foreach (JObject jObject in jArray)
         {
             JObject data = JObject.Parse(jObject.ToString());
+
+            if (artist.vendorId == 0)
+            {
+                Debug.LogError("There was no matching vendor for " + data["name"].ToString());
+            }
             //create new art
             //add it to the list of vendor
-            //where product.vendor id = artists.vendor id
 
-            //artists.Add(new Artist((int)data["id"], $"{data["first_name"]} {data["last_name"]}", (string)data["shop"]["description"]));
+            //var imageList = data["images"]?.Cast<string>().ToList() ?? new List<string>();
+            //Debug.Log("Name: " + data["name"].ToString() + " : Image: " + imageList[0].ToString());
+
+            var intList = data["variations"]?.Cast<int>().ToList() ?? new List<int>();
+            var stringList = data["tags"]?.Cast<string>().ToList() ?? new List<string>();
+
+            artist.artPieces.Add(new Art((int)data["id"], intList, data["name"].ToString(), StripHTML(data["description"].ToString()), stringList.FirstOrDefault()));
         }
     }
 
@@ -105,5 +126,25 @@ public static class MuseumBank
         string requestURL = oauth.GenerateRequestURL(in_url, HTTP_Method, parameters);
 
         return requestURL;
+    }
+
+    static IEnumerator GetImage(Artist artist, string imagePath)
+    {
+        UnityWebRequest www = UnityWebRequestTexture.GetTexture(imagePath);
+        yield return www.SendWebRequest();
+
+        if (www.isNetworkError || www.isHttpError)
+        {
+            Debug.Log(www.error);
+        }
+        else
+        {
+            Texture2D texture = ((DownloadHandlerTexture)www.downloadHandler).texture;
+            artist.artistImage = Sprite.Create(texture, new Rect(0, 0, texture.width, texture.height), Vector2.zero);
+        }
+    }
+    static string StripHTML(string input)
+    {
+        return Regex.Replace(input, "<.*?>", String.Empty);
     }
 }

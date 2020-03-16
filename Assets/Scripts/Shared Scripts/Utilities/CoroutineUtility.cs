@@ -11,12 +11,4 @@ public class CoroutineUtility : MonoBehaviour
         instance = this;
         MuseumBank.CallGet();
     }
-
-
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
