@@ -42,15 +42,12 @@ public static class MuseumBank
 
     static void CreateArtists(JArray jArray)
     {
-        Debug.Log("Create Artists");
-
         foreach (JObject jObject in jArray)
         {
             JObject data = JObject.Parse(jObject.ToString());
             Artist artist = new Artist((int)data["id"], $"{data["first_name"]} {data["last_name"]}", (string)data["shop"]["description"]);
 
-            string artistImageString = GetImageLink(data);
-            Debug.Log("Image String: " + artistImageString);
+            string artistImageString = GetImageLink((string)data["shop"]["description"]);
             CoroutineUtility.instance.StartCoroutine(GetImage(artist, artistImageString));
 
             artists.Add(artist);
@@ -61,8 +58,6 @@ public static class MuseumBank
 
     static IEnumerator GetAllProductsByVendor()
     {
-        Debug.Log("GetAllProductsByVendors");
-
         foreach (Artist artist in artists)
         {
             var request = CreateGetRequest(productsApiString, new List<string>() { $"vendor={artist.vendorId}"});
@@ -82,6 +77,7 @@ public static class MuseumBank
 
     static void CreateArt(JArray jArray, Artist artist)
     {
+        Debug.Log("Creating Art...");
         foreach (JObject jObject in jArray)
         {
             JObject data = JObject.Parse(jObject.ToString());
@@ -93,13 +89,16 @@ public static class MuseumBank
             //create new art
             //add it to the list of vendor
 
-            //var imageList = data["images"]?.Cast<string>().ToList() ?? new List<string>();
-            //Debug.Log("Name: " + data["name"].ToString() + " : Image: " + imageList[0].ToString());
+            var intList = data["variations"]?.Select(x => (int)x).ToList() ?? new List<int>();
 
-            var intList = data["variations"]?.Cast<int>().ToList() ?? new List<int>();
-            var stringList = data["tags"]?.Cast<string>().ToList() ?? new List<string>();
 
-            artist.artPieces.Add(new Art((int)data["id"], intList, data["name"].ToString(), StripHTML(data["description"].ToString()), stringList.FirstOrDefault()));
+            string tag = (string)data["tags"][0]["name"];
+            Debug.Log("Cause: " + tag);
+
+            Art art = new Art((int)data["id"], new List<int>(intList), data["name"].ToString(), StripHTML(data["description"].ToString()), tag);
+
+            CoroutineUtility.instance.StartCoroutine(GetImage(art, (string)data["images"][0]["src"]));
+            artist.artPieces.Add(art);
         }
     }
 
@@ -149,20 +148,33 @@ public static class MuseumBank
         }
     }
 
-    static string GetImageLink(JObject data)
+    static IEnumerator GetImage(Art art, string imagePath)
     {
-        var description = (string)data["shop"]["description"];
+        UnityWebRequest www = UnityWebRequestTexture.GetTexture(imagePath);
+        yield return www.SendWebRequest();
 
+        if (www.isNetworkError || www.isHttpError)
+        {
+            Debug.Log(www.error);
+        }
+        else
+        {
+            Texture2D texture = ((DownloadHandlerTexture)www.downloadHandler).texture;
+            art.artImage = Sprite.Create(texture, new Rect(0, 0, texture.width, texture.height), Vector2.zero);
+        }
+    }
+
+    static string GetImageLink(string data)
+    {
         string searchCharacters = "src=\"";
 
-        var searchCharIndex = description.IndexOf(searchCharacters);
+        var searchCharIndex = data.IndexOf(searchCharacters);
 
         string imageLink = "";
 
         if (searchCharIndex > 0)
         {
-            Debug.Log("Image Found!");
-            imageLink = ParseHTMLAttribute(searchCharIndex + searchCharacters.Length, description);
+            imageLink = ParseHTMLAttribute(searchCharIndex + searchCharacters.Length, data);
         }
         else
         {
