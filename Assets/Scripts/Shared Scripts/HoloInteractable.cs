@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Valve.VR.InteractionSystem;
+
 public class HoloInteractable : Interactable
 {
     public GameObject hologram;
@@ -12,12 +13,12 @@ public class HoloInteractable : Interactable
     public AudioClip offSound;
 
     AudioSource source;
-    Player player;
+    Valve.VR.InteractionSystem.Player player;
 
     private void Start()
     {
         source = GetComponent<AudioSource>();
-        player = Player.instance;
+        player = Valve.VR.InteractionSystem.Player.instance;
     }
 
     public override void Interacting()

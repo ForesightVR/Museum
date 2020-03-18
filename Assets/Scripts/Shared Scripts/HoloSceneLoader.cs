@@ -11,12 +11,12 @@ public class HoloSceneLoader : MonoBehaviour
     public AudioClip buttonSound;
 
     Animator animator;
-    Player player;
+    Valve.VR.InteractionSystem.Player player;
 
     private void Start()
     {
         animator = GetComponent<Animator>();
-        player = Player.instance;
+        player = Valve.VR.InteractionSystem.Player.instance;
     }
 
     private void OnTriggerEnter(Collider other)

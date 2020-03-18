@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Veterans.unity
     guid: f6d6f53f6497d75418ce32e0e10ad630
+  - enabled: 1
+    path: Assets/Networking/Scenes/Menu.unity
+    guid: 0e07785beb45aed4196e4a4531e1fd1e
   m_configObjects: {}
